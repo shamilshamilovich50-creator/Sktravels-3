@@ -1,0 +1,2429 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK Travels | Авторские туры в Узбекистан</title>
+  <meta name="description"
+    content="Индивидуальные авторские путешествия по Узбекистану от SK Travels. Хива, Бухара, Самарканд. Бутик-отели, персональный гид и восточный колорит." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/lily.svg" />
+
+  <!-- Stylesheets -->
+  <!-- Performance Preload for Critical Hero Assets -->
+  <link rel="preload" as="image" href="assets/images/hero_khiva.webp" type="image/webp" />
+  <link rel="preload" as="image" href="assets/images/polaroid_samarkand.webp" type="image/webp" />
+  <link rel="preload" as="image" href="assets/images/polaroid_bukhara.webp" type="image/webp" />
+  <link rel="stylesheet" href="css/style.css?v=8" />
+  <link rel="stylesheet" href="css/animations.css?v=8" />
+</head>
+
+<body>
+
+  <!-- ===================================================
+       HEADER
+       =================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Brand Logo -->
+      <a href="#" class="logo-block">
+        <div class="logo-text">
+          <h1>SK Travels</h1>
+          <span>С заботой о каждом госте</span>
+        </div>
+      </a>
+
+      <!-- Mobile Navigation Hamburger Toggle -->
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation -->
+      <nav class="header-nav" id="header-nav">
+        <a href="#itinerary" class="nav-link" data-i18n="nav_tours">Наши туры ▾</a>
+        <div class="nav-item-dropdown">
+          <a href="#" class="nav-link nav-dropdown-toggle" data-i18n="nav_pages">Страницы ▾</a>
+          <div class="nav-dropdown-menu">
+            <a href="5days.html" class="dropdown-item" data-i18n="nav_day5">5 дней</a>
+            <a href="6days.html" class="dropdown-item" data-i18n="nav_day6">6 дней</a>
+            <a href="7days.html" class="dropdown-item" data-i18n="nav_day7">7 дней</a>
+            <a href="8days.html" class="dropdown-item" data-i18n="nav_day8">8 дней</a>
+            <a href="#itinerary" class="dropdown-item" data-i18n="nav_day10">10 дней</a>
+          </div>
+        </div>
+        <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Стоимость</a>
+        <a href="#hotels" class="nav-link" data-i18n="nav_hotels">Отели</a>
+        <a href="#guests" class="nav-link" data-i18n="nav_guests">Наши гости</a>
+        <a href="#included" class="nav-link" data-i18n="nav_included">Включено</a>
+        <a href="#tickets" class="nav-link" data-i18n="nav_tickets">Дополнения</a>
+      </nav>
+
+      <!-- Actions & Contacts -->
+      <div class="header-actions">
+        <!-- Language Switcher Selector -->
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="uz">UZ</button>
+        </div>
+
+        <div class="social-icons">
+          <!-- NFC Contact Download -->
+          <a href="assets/sk_travels.vcf" download="sk_travels.vcf" class="social-btn nfc-btn"
+            title="Сохранить контакт (NFC)" aria-label="Сохранить контакт (NFC)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 18h12M6 14h12M6 10h12M6 6h12" />
+            </svg>
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/998974230011" target="_blank" class="social-btn" title="WhatsApp"
+            aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67Z" />
+            </svg>
+          </a>
+          <!-- Telegram -->
+          <a href="https://t.me/Sokrat_100kratt" target="_blank" class="social-btn" title="Telegram"
+            aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z" />
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/sktravels.uz/" target="_blank" class="social-btn" title="Instagram" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/share/1ErdkEuvtm/" target="_blank" class="social-btn" title="Facebook" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================
+       HERO SECTION
+       =================================================== -->
+  <section class="hero-section" data-cms-block="hero">
+    <div class="container hero-content">
+      <div class="hero-grid">
+        <!-- Left Hero Info -->
+        <div>
+          <span class="hero-badge" data-i18n="hero_badge" data-cms-text="hero_badge">Индивидуальный тур на 10 дней</span>
+          <h2 class="hero-title" data-i18n="hero_title" data-cms-text="hero_title">« ГРАНД ТУР ПО УЗБЕКИСТАНУ »</h2>
+
+          <!-- Route Chips -->
+          <div class="route-path">
+            <span class="route-pill" data-i18n="tashkent">Ташкент</span>
+            <span class="route-arrow">→</span>
+            <span class="route-pill" data-i18n="samarkand">Самарканд</span>
+            <span class="route-arrow">→</span>
+            <span class="route-pill" data-i18n="bukhara">Бухара</span>
+            <span class="route-arrow">→</span>
+            <span class="route-pill" data-i18n="khiva">Хива</span>
+          </div>
+
+          <button class="btn-gold js-open-modal" data-i18n="btn_submit_request">Оставить заявку</button>
+        </div>
+
+        <!-- Right Hero Polaroids Stack -->
+        <div class="hero-polaroids">
+          <!-- Polaroid 1: Samarkand -->
+          <div class="polaroid-card card-pos-1 float-polaroid-1">
+            <div class="washi-tape"></div>
+            <img src="assets/images/polaroid_samarkand.webp" data-cms-img="polaroid_samarkand" alt="Самарканд Регистан" width="290" height="320"
+              loading="eager" fetchpriority="high" />
+            <div class="polaroid-caption">Самарканд 2022</div>
+          </div>
+          <!-- Polaroid 2: Bukhara -->
+          <div class="polaroid-card card-pos-2 float-polaroid-2">
+            <div class="washi-tape"></div>
+            <img src="assets/images/polaroid_bukhara.webp" data-cms-img="polaroid_bukhara" alt="Бухара Пои-Калон" width="290" height="320"
+              loading="eager" fetchpriority="high" />
+            <div class="polaroid-caption">Бухара 2019</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Torn Paper Transition -->
+  <div class="torn-divider-top"></div>
+
+  <!-- ===================================================
+       INTERACTIVE MAP SECTION ("ЧТО ВАС ЖДЁТ?")
+       =================================================== -->
+  <section class="section-map" id="map-section" data-cms-block="map">
+    <div class="container map-container">
+      <div class="map-header">
+        <h2 class="map-title" data-i18n="map_title" data-cms-text="map_title">ЧТО ВАС ЖДЁТ?</h2>
+        <p class="map-subtitle" data-i18n="map_subtitle" data-cms-text="map_subtitle">Наведите на регион, чтобы узнать больше</p>
+
+        <!-- City quick-switcher tabs: Tashkent, Samarkand, Bukhara, Khiva, Aydarkul -->
+        <div class="map-city-tabs" role="tablist">
+          <button class="map-city-tab" data-city="tashkent" type="button">Ташкент</button>
+          <button class="map-city-tab" data-city="samarkand" type="button">Самарканд</button>
+          <button class="map-city-tab" data-city="bukhara" type="button">Бухара</button>
+          <button class="map-city-tab active" data-city="khiva" type="button">Хива</button>
+        </div>
+      </div>
+
+      <div class="map-interactive-wrapper">
+        <div class="map-stage">
+          <!-- Base Map Layer with authentic paper texture & torn borders -->
+          <img class="map-layer-img map-layer-base" src="assets/map_layer_base.png" alt="Карта Узбекистана" />
+
+          <!-- Region Active Photo Layers (100% pixel-perfect alignment) -->
+          <img class="map-layer-img map-layer-photo map-photo-khiva active" src="assets/map_layer_khiva.png"
+            alt="Хива" />
+          <img class="map-layer-img map-layer-photo map-photo-bukhara" src="assets/map_layer_bukhara.png"
+            alt="Бухара" />
+          <img class="map-layer-img map-layer-photo map-photo-samarkand" src="assets/map_layer_samarkand.png"
+            alt="Самарканд" />
+          <img class="map-layer-img map-layer-photo map-photo-tashkent" src="assets/map_layer_tashkent.png"
+            alt="Ташкент" />
+
+          <!-- Golden Dashed Route Trajectory -->
+          <img class="map-route-svg" src="assets/map_route.svg" alt="Маршрут тура" />
+
+          <!-- 5 City Pin Markers with glowing pulses and clear labels -->
+          <div class="map-marker marker-khiva active" data-city="khiva" style="left: 10.73%; top: 24.75%;">
+            <div class="marker-pulse"></div>
+            <div class="marker-dot"></div>
+            <span class="marker-label">Хива</span>
+          </div>
+
+          <div class="map-marker marker-bukhara" data-city="bukhara" style="left: 36.79%; top: 44.36%;">
+            <div class="marker-pulse"></div>
+            <div class="marker-dot"></div>
+            <span class="marker-label">Бухара</span>
+          </div>
+
+          <div class="map-marker marker-samarkand" data-city="samarkand" style="left: 65.69%; top: 49.75%;">
+            <div class="marker-pulse"></div>
+            <div class="marker-dot"></div>
+            <span class="marker-label">Самарканд</span>
+          </div>
+
+          <div class="map-marker marker-tashkent" data-city="tashkent" style="left: 86.52%; top: 26.47%;">
+            <div class="marker-pulse"></div>
+            <div class="marker-dot"></div>
+            <span class="marker-label">Ташкент</span>
+          </div>
+
+          <!-- Region Interactive Hover / Click Hitboxes -->
+          <div class="map-hitbox hitbox-khiva" data-city="khiva" title="Хива"></div>
+          <div class="map-hitbox hitbox-bukhara" data-city="bukhara" title="Бухара"></div>
+          <div class="map-hitbox hitbox-samarkand" data-city="samarkand" title="Самарканд"></div>
+          <div class="map-hitbox hitbox-tashkent" data-city="tashkent" title="Ташкент"></div>
+
+          <!-- Floating Interactive City Tooltip (Desktop) -->
+          <div class="map-city-tooltip" id="map-city-tooltip" role="region" aria-live="polite">
+            <div class="map-tooltip-header">
+              <h3 class="map-tooltip-title" id="map-tooltip-title">Хива</h3>
+              <span class="map-tooltip-badge" id="map-tooltip-badge">Более 2500 лет • ЮНЕСКО</span>
+            </div>
+            <p class="map-tooltip-summary" id="map-tooltip-summary"></p>
+            <div class="map-tooltip-dates-block">
+              <div class="map-tooltip-dates-title">Ключевые вехи:</div>
+              <ul class="map-tooltip-dates" id="map-tooltip-dates"></ul>
+            </div>
+            <p class="map-tooltip-significance" id="map-tooltip-significance"></p>
+          </div>
+        </div>
+
+        <!-- Mobile Information Drawer (Mobile / Touch) -->
+        <div class="map-mobile-drawer" id="map-mobile-drawer" aria-live="polite">
+          <button class="map-mobile-drawer-close" id="map-drawer-close" aria-label="Закрыть описание">×</button>
+          <div class="map-tooltip-header">
+            <h3 class="map-tooltip-title" id="map-mobile-title">Хива</h3>
+            <span class="map-tooltip-badge" id="map-mobile-badge">Более 2500 лет • ЮНЕСКО</span>
+          </div>
+          <p class="map-tooltip-summary" id="map-mobile-summary"></p>
+          <div class="map-tooltip-dates-block">
+            <div class="map-tooltip-dates-title">Ключевые вехи:</div>
+            <ul class="map-tooltip-dates" id="map-mobile-dates"></ul>
+          </div>
+          <p class="map-tooltip-significance" id="map-mobile-significance"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smooth Wave Divider into Light Blue Section -->
+  <div class="included-wave-divider-top" aria-hidden="true">
+    <svg viewBox="0 0 1440 48" fill="none" preserveAspectRatio="none" style="display: block; width: 100%; height: 48px;">
+      <path d="M0,0 C480,48 960,48 1440,0 L1440,48 L0,48 Z" fill="#E6F3FA"></path>
+    </svg>
+  </div>
+
+  <!-- ===================================================
+       INCLUDED IN PRICE ("ЧТО ВХОДИТ В СТОИМОСТЬ?")
+       =================================================== -->
+  <section class="section-included" id="included">
+    <div class="container">
+      <div class="section-header-center">
+        <h2 class="section-title-serif" data-i18n="included_title" style="color: #0F2847;">В СТОИМОСТЬ ТУРА УЖЕ ВКЛЮЧЕНО</h2>
+      </div>
+
+      <div class="included-grid">
+        <!-- 1 -->
+        <div class="included-item">
+          <div class="included-icon">
+            <img src="assets/icons/lily.svg" alt="icon" />
+          </div>
+          <div class="included-text">Проживание в фактурных бутик-отелях</div>
+        </div>
+
+        <!-- 2 -->
+        <div class="included-item">
+          <div class="included-icon">
+            <img src="assets/icons/lily.svg" alt="icon" />
+          </div>
+          <div class="included-text">Великолепные завтраки и обеды на экскурсиях</div>
+        </div>
+
+        <!-- 3 -->
+        <div class="included-item">
+          <div class="included-icon">
+            <img src="assets/icons/lily.svg" alt="icon" />
+          </div>
+          <div class="included-text">Персональные трансферы на комфортабельных авто</div>
+        </div>
+
+        <!-- 4 -->
+        <div class="included-item">
+          <div class="included-icon">
+            <img src="assets/icons/lily.svg" alt="icon" />
+          </div>
+          <div class="included-text">Увлекательные экскурсии с харизматичными гидами</div>
+        </div>
+
+        <!-- 5 -->
+        <div class="included-item">
+          <div class="included-icon">
+            <img src="assets/icons/lily.svg" alt="icon" />
+          </div>
+          <div class="included-text">Входные билеты во все музеи и достопримечательности</div>
+        </div>
+
+
+        <!-- 7 -->
+        <div class="included-item">
+          <div class="included-icon">
+            <img src="assets/icons/lily.svg" alt="icon" />
+          </div>
+          <div class="included-text">Визит в гости к семье преемственных керамистов</div>
+        </div>
+
+        <!-- 8 -->
+        <div class="included-item">
+          <div class="included-icon">
+            <img src="assets/icons/lily.svg" alt="icon" />
+          </div>
+          <div class="included-text">Национальное фольклорное шоу и живая музыка в медресе</div>
+        </div>
+
+        <!-- 9 -->
+        <div class="included-item">
+          <div class="included-icon">
+            <img src="assets/icons/lily.svg" alt="icon" />
+          </div>
+          <div class="included-text">Поездка в деревню ремесленников</div>
+        </div>
+
+        <!-- 10 -->
+        <div class="included-item">
+          <div class="included-icon">
+            <img src="assets/icons/lily.svg" alt="icon" />
+          </div>
+          <div class="included-text">Закат в пустыне у подножия древних крепостей</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Polaroid Card Inside Container -->
+    <div class="polaroid-card included-polaroid">
+      <div class="washi-tape"></div>
+      <img src="assets/images/polaroid_samarkand.jpg" alt="Самарканд 2025" width="240" height="180" loading="lazy"
+        decoding="async" />
+      <div class="polaroid-caption">Самарканд 2025</div>
+    </div>
+  </section>
+
+  <!-- Smooth Wave Divider into Itinerary Section -->
+  <div class="included-wave-divider-bottom" aria-hidden="true">
+    <svg viewBox="0 0 1440 48" fill="none" preserveAspectRatio="none" style="display: block; width: 100%; height: 48px;">
+      <path d="M0,0 L1440,0 L1440,48 C960,0 480,0 0,48 Z" fill="#E6F3FA"></path>
+    </svg>
+  </div>
+
+  <!-- ===================================================
+       ITINERARY PROGRAM ("СЦЕНАРИЙ ВАШЕГО ИДЕАЛЬНОГО...")
+       =================================================== -->
+  <section class="section-itinerary" id="itinerary">
+    <div class="container">
+      <div class="section-header-center">
+        <h2 class="section-title-serif" data-i18n="itinerary_title">СЦЕНАРИЙ ВАШЕГО ИДЕАЛЬНОГО ПУТЕШЕСТВИЯ</h2>
+        <p class="section-subtitle" data-i18n="itinerary_subtitle">(10 дней) Яркие базары, величественные минареты и тёплое гостеприимство создают
+          незабываемые воспоминания. SK TRAVELS — откройте сердце Шёлкового пути!</p>
+
+        <!-- Tour Duration Navigation Buttons -->
+        <div class="itinerary-duration-nav">
+          <a href="5days.html#itinerary" class="duration-nav-btn" data-i18n="nav_day5">5 дней</a>
+          <a href="6days.html#itinerary" class="duration-nav-btn" data-i18n="nav_day6">6 дней</a>
+          <a href="7days.html#itinerary" class="duration-nav-btn" data-i18n="nav_day7">7 дней</a>
+          <a href="8days.html#itinerary" class="duration-nav-btn" data-i18n="nav_day8">8 дней</a>
+          <a href="#itinerary" class="duration-nav-btn active" data-i18n="nav_day10">10 дней</a>
+        </div>
+      </div>
+
+            <!-- Postage Stamp Horizontal Photo Strip (Ташкент, Самарканд, Бухара, Горы) -->
+      <div class="stamp-gallery-strip">
+        <div class="stamp-item">
+          <div class="stamp-photo-wrapper">
+            <img src="assets/images/stamp_tashkent.jpg" alt="Ташкент" width="240" height="170" />
+            <span class="stamp-label">Ташкент</span>
+          </div>
+        </div>
+        <div class="stamp-item">
+          <div class="stamp-photo-wrapper">
+            <img src="assets/images/stamp_samarkand.jpg" alt="Самарканд" width="240" height="170" />
+            <span class="stamp-label">Самарканд</span>
+          </div>
+        </div>
+        <div class="stamp-item">
+          <div class="stamp-photo-wrapper">
+            <img src="assets/images/stamp_bukhara.jpg" alt="Бухара" width="240" height="170" />
+            <span class="stamp-label">Бухара</span>
+          </div>
+        </div>
+        <div class="stamp-item">
+          <div class="stamp-photo-wrapper">
+            <img src="assets/images/stamp_mountains.jpg" alt="Горы Узбекистана" width="240" height="170" />
+            <span class="stamp-label">Горы</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day by Day Accordion List -->
+      <div class="days-accordion-list">
+
+        <!-- ДЕНЬ 1 -->
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-title-group">
+              <span class="day-number-badge">1 ДЕНЬ</span>
+              <span class="day-route-name">Прибытие в Ташкент</span>
+            </div>
+            <button class="day-toggle-btn" aria-label="Открыть день">+</button>
+          </div>
+          <div class="day-body">
+            <div class="day-content-inner">
+              <div class="day-details-grid">
+                <div class="detail-block-badge">
+                  <div class="badge-item">
+                    <div class="badge-icon">★</div>
+                    <div class="badge-info">
+                      <h5>Впечатление дня</h5>
+                      <p>Знакомство со столицей, сквер Амира Тимура и вечерний Seoul Mun</p>
+                    </div>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-icon">🍴</div>
+                    <div class="badge-info">
+                      <h5>Питание</h5>
+                      <p>Завтрак и обед</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-step">
+                  <h4>Встреча в аэропорту Ташкента и трансфер</h4>
+                  <p>По прибытии в Международный аэропорт Ташкента гостей встретят представители принимающей компании и
+                    организуют комфортный трансфер в отель. После размещения предусмотрено время для отдыха после
+                    перелета.</p>
+                </div>
+
+                <div class="day-step">
+                  <h4>Прогулка по столице и Seoul Mun</h4>
+                  <p>Во второй половине дня состоится ознакомительная прогулка по современной столице. Маршрут пройдет
+                    через сквер Амира Тимура — один из символов города, а также новую прогулочную зону Seoul Mun,
+                    сочетающую современную архитектуру, зеленые аллеи и уютную вечернюю атмосферу. В завершение дня
+                    гостей ожидает первое знакомство с гастрономическими традициями и вечерней атмосферой столицы.</p>
+                </div>
+              </div>
+
+                            <div class="day-photo-grid">
+                <div class="day-photo-item"><img src="assets/gallery/tashkent/tashkent_1.jpg" alt="Вечерний Ташкент и Magic City" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/images/hotel_tashkent.jpg" alt="Отель в центре Ташкента" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/images/day2_food.jpg" alt="Национальная кухня Узбекистана" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/images/stamp_tashkent.jpg" alt="Сквер Амира Тимура" width="280" height="190" loading="lazy" decoding="async" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ДЕНЬ 2 -->
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-title-group">
+              <span class="day-number-badge">2 ДЕНЬ</span>
+              <span class="day-route-name">Горный Узбекистан — Курорт Amirsoy и озеро Чарвак</span>
+            </div>
+            <button class="day-toggle-btn" aria-label="Открыть день">+</button>
+          </div>
+          <div class="day-body">
+            <div class="day-content-inner">
+              <div class="day-details-grid">
+                <div class="detail-block-badge">
+                  <div class="badge-item">
+                    <div class="badge-icon">★</div>
+                    <div class="badge-info">
+                      <h5>Впечатление дня</h5>
+                      <p>Панорамный подъем на канатке Amirsoy и бирюзовая гладь Чарвака</p>
+                    </div>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-icon">🍴</div>
+                    <div class="badge-info">
+                      <h5>Питание</h5>
+                      <p>Завтрак и горный обед</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-step">
+                  <h4>Всесезонный курорт Amirsoy</h4>
+                  <p>После завтрака группа отправится в живописные предгорья Западного Тянь-Шаня. Первой остановкой
+                    станет современный всесезонный курорт Amirsoy. Подъем по канатной дороге позволит насладиться
+                    великолепными панорамными видами горных хребтов и сделать памятные фотографии. После прогулки гостей
+                    ждет обед в горном ресторане.</p>
+                </div>
+
+                <div class="day-step">
+                  <h4>Чарвакское водохранилище и набережная Анхор</h4>
+                  <p>Далее маршрут продолжится к Чарвакскому водохранилищу — одному из самых красивых природных уголков
+                    страны. Во время остановки на смотровой площадке гости смогут полюбоваться бирюзовой гладью озера и
+                    окружающими горными пейзажами. По возвращении в Ташкент предусмотрена вечерняя прогулка по площади
+                    Независимости и благоустроенной набережной канала Анхор. После насыщенного дня гостей ожидает отдых
+                    в отеле.</p>
+                </div>
+              </div>
+
+                            <div class="day-photo-grid">
+                <div class="day-photo-item"><img src="assets/images/stamp_mountains.jpg" alt="Канатная дорога в Чимгане" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/gallery/mountains/mountain_1.jpg" alt="Всесезонный курорт Amirsoy" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/gallery/mountains/mountain_2.jpg" alt="Бирюзовое озеро Чарвак" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/gallery/mountains/mountain_5.jpg" alt="Панорама Тянь-Шаньских гор" width="280" height="190" loading="lazy" decoding="async" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ДЕНЬ 3 -->
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-title-group">
+              <span class="day-number-badge">3 ДЕНЬ</span>
+              <span class="day-route-name">Ташкент — Самарканд</span>
+            </div>
+            <button class="day-toggle-btn" aria-label="Открыть день">+</button>
+          </div>
+          <div class="day-body">
+            <div class="day-content-inner">
+              <div class="day-details-grid">
+                <div class="detail-block-badge">
+                  <div class="badge-item">
+                    <div class="badge-icon">★</div>
+                    <div class="badge-info">
+                      <h5>Впечатление дня</h5>
+                      <p>Коран халифа Усмана VIII века и знаменитый Центр плова Besh Qozon</p>
+                    </div>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-icon">🍴</div>
+                    <div class="badge-info">
+                      <h5>Питание</h5>
+                      <p>Завтрак и обед (плов)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-step">
+                  <h4>Духовный комплекс Хаст-Имам и базар Чорсу</h4>
+                  <p>После завтрака и освобождения номеров начинается экскурсионная программа по историческому Ташкенту.
+                    Гости посетят духовный комплекс Хаст-Имам — главный религиозный центр столицы, где хранится
+                    знаменитый Коран халифа Усмана, один из древнейших рукописных экземпляров Корана в мире. Далее
+                    маршрут продолжится посещением колоритного рынка Чорсу и мемориального комплекса «Мужество».</p>
+                </div>
+
+                <div class="day-step">
+                  <h4>Центр плова Besh Qozon и отбытие в Самарканд</h4>
+                  <p>После обеда в знаменитом Центре плова Besh Qozon группа отправится в Самарканд. По прибытии —
+                    размещение в гостинице и отдых.</p>
+                </div>
+              </div>
+
+              <div class="day-photo-grid day-photo-grid--2">
+                <div class="day-photo-item"><img src="assets/images/day2_food.jpg" alt="Плов в Центре плова Besh Qozon" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/images/hotel_samarkand.jpg" alt="Отель East Star Самарканд" width="280" height="190" loading="lazy" decoding="async" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ДЕНЬ 4 -->
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-title-group">
+              <span class="day-number-badge">4 ДЕНЬ</span>
+              <span class="day-route-name">Самарканд — Жемчужина Великого шелкового пути</span>
+            </div>
+            <button class="day-toggle-btn" aria-label="Открыть день">+</button>
+          </div>
+          <div class="day-body">
+            <div class="day-content-inner">
+              <div class="day-details-grid">
+                <div class="detail-block-badge">
+                  <div class="badge-item">
+                    <div class="badge-icon">★</div>
+                    <div class="badge-info">
+                      <h5>Впечатление дня</h5>
+                      <p>Величественный Регистан, усыпальница Гур-Эмир и атмосфера комплекса «Вечный город»</p>
+                    </div>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-icon">🍴</div>
+                    <div class="badge-info">
+                      <h5>Питание</h5>
+                      <p>Завтрак и обед (самаркандский плов)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-step">
+                  <h4>Памятники эпохи Тимуридов: Гур-Эмир, Регистан и Биби-Ханым</h4>
+                  <p>После завтрака гостей ожидает экскурсия по одному из древнейших городов мира. В программе —
+                    мавзолей Гур-Эмир, грандиозная площадь Регистан и величественная мечеть Биби-Ханым — выдающиеся
+                    памятники эпохи Тимуридов. Во время обеда гости попробуют настоящий самаркандский плов,
+                    приготовленный по классическому рецепту.</p>
+                </div>
+
+                <div class="day-step">
+                  <h4>Шахи-Зинда, фабрика шелковой бумаги Конигиль и «Вечный город»</h4>
+                  <p>Во второй половине дня состоится посещение архитектурного ансамбля Шахи-Зинда, знаменитого рынка
+                    Сиаб и ремесленной деревни Конигиль, где до сих пор изготавливают знаменитую самаркандскую шелковую
+                    бумагу по древней технологии. Вечером гостей ожидает прогулка по туристическому комплексу «Вечный
+                    город» (Boiqiy Shahar), где воссоздана атмосфера исторического Самарканда, свободное время и отдых.
+                  </p>
+                </div>
+              </div>
+
+              <div class="day-photo-grid day-photo-grid--3">
+                <div class="day-photo-item"><img src="assets/images/stamp_samarkand.jpg" alt="Грандиозная площадь Регистан" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/images/polaroid_samarkand.jpg" alt="Мавзолей Гур-Эмир" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/gallery/samarkand_bukhara/sam_bukh_10.jpg" alt="Ансамбль Шахи-Зинда" width="280" height="190" loading="lazy" decoding="async" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ДЕНЬ 5 -->
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-title-group">
+              <span class="day-number-badge">5 ДЕНЬ</span>
+              <span class="day-route-name">Самарканд — Бухара</span>
+            </div>
+            <button class="day-toggle-btn" aria-label="Открыть день">+</button>
+          </div>
+          <div class="day-body">
+            <div class="day-content-inner">
+              <div class="day-details-grid">
+                <div class="detail-block-badge">
+                  <div class="badge-item">
+                    <div class="badge-icon">★</div>
+                    <div class="badge-info">
+                      <h5>Впечатление дня</h5>
+                      <p>Ансамбль Ляби-Хауз, старинные торговые купола и вечер с видом на историческую Бухару</p>
+                    </div>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-icon">🍴</div>
+                    <div class="badge-info">
+                      <h5>Питание</h5>
+                      <p>Завтрак и обед</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-step">
+                  <h4>Переезд в Священную Бухару и обед</h4>
+                  <p>После завтрака группа отправится в Бухару — один из древнейших городов Центральной Азии. По
+                    прибытии гостей ожидает обед, размещение в гостинице и начало экскурсионной программы.</p>
+                </div>
+
+                <div class="day-step">
+                  <h4>Прогулка по Ляби-Хауз, Нодир Девон-Беги и куполам ремесленников</h4>
+                  <p>Во время прогулки по историческому центру будут посещены ансамбль Ляби-Хауз, медресе Нодир
+                    Девон-Беги и старинные торговые купола, где на протяжении столетий располагались мастерские
+                    ремесленников и восточные базары. В завершение дня гостей ждет прогулка по вечерней Бухаре и отдых.
+                  </p>
+                </div>
+              </div>
+
+              <div class="day-photo-grid day-photo-grid--1">
+                <div class="day-photo-item"><img src="assets/images/polaroid_bukhara.jpg" alt="Ансамбль Ляби-Хауз" width="280" height="190" loading="lazy" decoding="async" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ДЕНЬ 6 -->
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-title-group">
+              <span class="day-number-badge">6 ДЕНЬ</span>
+              <span class="day-route-name">Бухара — История, дворцы и традиции</span>
+            </div>
+            <button class="day-toggle-btn" aria-label="Открыть день">+</button>
+          </div>
+          <div class="day-body">
+            <div class="day-content-inner">
+              <div class="day-details-grid">
+                <div class="detail-block-badge">
+                  <div class="badge-item">
+                    <div class="badge-icon">★</div>
+                    <div class="badge-info">
+                      <h5>Впечатление дня</h5>
+                      <p>Дворец эмира Ситораи Мохи-Хоса, цитадель Арк и фольклорное шоу с живой музыкой</p>
+                    </div>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-icon">🍴</div>
+                    <div class="badge-info">
+                      <h5>Питание</h5>
+                      <p>Завтрак и обед в агрокомплексе Varnet</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-step">
+                  <h4>Дворец эмира Ситораи Мохи-Хоса и агрокомплекс Varnet</h4>
+                  <p>После завтрака экскурсия продолжится посещением загородной резиденции последнего эмира Бухары —
+                    дворца Ситораи Мохи-Хоса. Далее программа включает посещение агротуристического комплекса Varnet,
+                    прогулку по территории комплекса и обед с блюдами национальной кухни.</p>
+                </div>
+
+                <div class="day-step">
+                  <h4>Цитадель Арк, Пои Калян и фольклорное шоу</h4>
+                  <p>Во второй половине дня гости познакомятся с главными архитектурными символами Бухары — цитаделью
+                    Арк и величественным ансамблем Пои Калян. Вечером состоится яркое национальное фольклорное шоу с
+                    живой музыкой и традиционными танцами.</p>
+                </div>
+              </div>
+
+                            <div class="day-photo-grid">
+                <div class="day-photo-item"><img src="assets/images/stamp_bukhara.jpg" alt="Минарет и ансамбль Пои Калян" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/images/polaroid_bukhara.jpg" alt="Древняя цитадель Арк" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/gallery/samarkand_bukhara/sam_bukh_20.jpg" alt="Дворец Ситораи Мохи-Хоса" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/images/hotel_bukhara.jpg" alt="Аутентичный отель Бухары" width="280" height="190" loading="lazy" decoding="async" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ДЕНЬ 7 -->
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-title-group">
+              <span class="day-number-badge">7 ДЕНЬ</span>
+              <span class="day-route-name">Бухара — Хива</span>
+            </div>
+            <button class="day-toggle-btn" aria-label="Открыть день">+</button>
+          </div>
+          <div class="day-body">
+            <div class="day-content-inner">
+              <div class="day-details-grid">
+                <div class="detail-block-badge">
+                  <div class="badge-item">
+                    <div class="badge-icon">★</div>
+                    <div class="badge-info">
+                      <h5>Впечатление дня</h5>
+                      <p>Красные пески Кызылкума, чайхана на берегу Амударьи и закат у минарета Кальта-Минор</p>
+                    </div>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-icon">🍴</div>
+                    <div class="badge-info">
+                      <h5>Питание</h5>
+                      <p>Завтрак и обед у реки Амударья</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-step">
+                  <h4>Переезд через пустыню Кызылкум и берег Амударьи</h4>
+                  <p>После завтрака группа отправится в Хиву через знаменитую пустыню Кызылкум. Во время путешествия
+                    предусмотрена остановка на обед в традиционной чайхане на берегу реки Амударья. По прибытии в Хиву
+                    состоится размещение в гостинице.</p>
+                </div>
+
+                <div class="day-step">
+                  <h4>Прогулка по Ичан-Кале и закат у Кальта-Минор</h4>
+                  <p>Вечером гостей ожидает прогулка по историческому комплексу Ичан-Кала и встреча заката у знаменитого
+                    минарета Кальта-Минор. После экскурсии — свободный вечер и отдых в отеле.</p>
+                </div>
+              </div>
+
+              <div class="day-photo-grid day-photo-grid--1">
+                <div class="day-photo-item"><img src="assets/images/hero_khiva.jpg" alt="Минарет Кальта-Минор" width="280" height="190" loading="lazy" decoding="async" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ДЕНЬ 8 -->
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-title-group">
+              <span class="day-number-badge">8 ДЕНЬ</span>
+              <span class="day-route-name">Хива — Город-музей под открытым небом</span>
+            </div>
+            <button class="day-toggle-btn" aria-label="Открыть день">+</button>
+          </div>
+          <div class="day-body">
+            <div class="day-content-inner">
+              <div class="day-details-grid">
+                <div class="detail-block-badge">
+                  <div class="badge-item">
+                    <div class="badge-icon">★</div>
+                    <div class="badge-info">
+                      <h5>Впечатление дня</h5>
+                      <p>Дворец Таш-Ховли, резная Джума-мечеть и дегустация блюд тухум-барак и шивит ош</p>
+                    </div>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-icon">🍴</div>
+                    <div class="badge-info">
+                      <h5>Питание</h5>
+                      <p>Завтрак и дегустационный обед</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-step">
+                  <h4>Экскурсия по легендарной крепости Ичан-Кала</h4>
+                  <p>После завтрака начинается экскурсия по крепости Ичан-Кала. Гости посетят крепость Куня-Арк, дворец
+                    Таш-Ховли, уникальную Джума-мечеть с деревянными резными колоннами и мавзолей Пахлавана Махмуда. Во
+                    время обеда состоится дегустация традиционных блюд хорезмской кухни — тухум-барак и шивит ош.</p>
+                </div>
+
+                <div class="day-step">
+                  <h4>Ремесленники, свободное время и вечер в старом городе</h4>
+                  <p>Во второй половине дня предусмотрено свободное время для прогулок, покупки сувениров и знакомства с
+                    работой местных ремесленников. Вечером гостей ожидает прогулка по колоритным улочкам старого города
+                    и отдых в отеле.</p>
+                </div>
+              </div>
+
+              <div class="day-photo-grid day-photo-grid--1">
+                <div class="day-photo-item"><img src="assets/images/day2_ichan_kala.jpg" alt="Крепость Куня-Арк и Ичан-Кала" width="280" height="190" loading="lazy" decoding="async" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ДЕНЬ 9 -->
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-title-group">
+              <span class="day-number-badge">9 ДЕНЬ</span>
+              <span class="day-route-name">Хорезм — Древние крепости</span>
+            </div>
+            <button class="day-toggle-btn" aria-label="Открыть день">+</button>
+          </div>
+          <div class="day-body">
+            <div class="day-content-inner">
+              <div class="day-details-grid">
+                <div class="detail-block-badge">
+                  <div class="badge-item">
+                    <div class="badge-icon">★</div>
+                    <div class="badge-info">
+                      <h5>Впечатление дня</h5>
+                      <p>Двухтысячелетние цитадели Аяз-Кала и Топрак-Кала и прощальная вечерняя Ичан-Кала</p>
+                    </div>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-icon">🍴</div>
+                    <div class="badge-info">
+                      <h5>Питание</h5>
+                      <p>Завтрак и обед</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-step">
+                  <h4>Древние крепости Аяз-Кала и Топрак-Кала</h4>
+                  <p>После завтрака состоится поездка к древним крепостям Аяз-Кала и Топрак-Кала — уникальным памятникам
+                    древнего Хорезма, сохранившимся более двух тысяч лет. Для гостей, предпочитающих спокойный отдых,
+                    предлагается альтернативная программа в Хиве с посещением ремесленных мастерских и свободным
+                    временем для прогулок по старому городу.</p>
+                </div>
+
+                <div class="day-step">
+                  <h4>Возвращение в Хиву и прощальный вечер</h4>
+                  <p>После обеда группа возвращается в Хиву. В завершение путешествия гостей ожидает прощальная прогулка
+                    по вечерней Ичан-Кале и ночь в отеле.</p>
+                </div>
+              </div>
+
+              <div class="day-photo-grid">
+                <div class="day-photo-item"><img src="assets/images/khorezm_ayaz_kala.jpg" alt="Древняя крепость Аяз-Кала" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/images/khorezm_toprak_kala.jpg" alt="Цитадель Топрак-Кала" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/images/khorezm_kyzyl_kala.jpg" alt="Красная крепость Кызыл-Кала" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/images/khorezm_ayaz_kala_2.jpg" alt="Панорама древнего Хорезма" width="280" height="190" loading="lazy" decoding="async" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ДЕНЬ 10 -->
+        <div class="day-card">
+          <div class="day-header">
+            <div class="day-title-group">
+              <span class="day-number-badge">10 ДЕНЬ</span>
+              <span class="day-route-name">Завершение тура</span>
+            </div>
+            <button class="day-toggle-btn" aria-label="Открыть день">+</button>
+          </div>
+          <div class="day-body">
+            <div class="day-content-inner">
+              <div class="day-details-grid">
+                <div class="detail-block-badge">
+                  <div class="badge-item">
+                    <div class="badge-icon">★</div>
+                    <div class="badge-info">
+                      <h5>Впечатление дня</h5>
+                      <p>Незабываемые воспоминания и подарок от компании SK Travels</p>
+                    </div>
+                  </div>
+                  <div class="badge-item">
+                    <div class="badge-icon">🍴</div>
+                    <div class="badge-info">
+                      <h5>Питание</h5>
+                      <p>Завтрак</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-step">
+                  <h4>Трансфер в Международный аэропорт Ургенча</h4>
+                  <p>После завтрака и освобождения номеров организуется трансфер в Международный аэропорт Ургенча.
+                    Подача транспорта осуществляется с учетом времени регистрации на рейс и дорожной ситуации.</p>
+                </div>
+
+                <div class="day-step">
+                  <h4>SK TRAVELS — откройте сердце Шёлкового пути!</h4>
+                  <p>Благодарим за выбор нашей компании и будем рады вновь приветствовать вас в Узбекистане для новых
+                    путешествий по Великому шелковому пути!</p>
+                </div>
+              </div>
+
+              <div class="day-photo-grid">
+                <div class="day-photo-item"><img src="assets/gallery/samarkand_bukhara/sam_bukh_1.jpg" alt="Воспоминания о путешествии — Самарканд" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/gallery/samarkand_bukhara/sam_bukh_5.jpg" alt="Воспоминания о путешествии — Бухара" width="280" height="190" loading="lazy" decoding="async" /></div>
+                <div class="day-photo-item"><img src="assets/gallery/samarkand_bukhara/sam_bukh_12.jpg" alt="Архитектурные сокровища Узбекистана" width="280" height="190" loading="lazy" decoding="async" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       PRICING TABLE SECTION
+       =================================================== -->
+  <section class="section-pricing" id="pricing" data-cms-block="pricing">
+    <div class="container">
+      <div class="section-header-center">
+        <h2 class="section-title-serif" data-cms-text="pricing_title">СТОИМОСТЬ ТУРОВ</h2>
+        <p class="section-subtitle" data-cms-text="pricing_subtitle">Цена указана на 1 человека в долларах США ($) в зависимости от количества гостей и длительности тура</p>
+      </div>
+
+      <div class="pricing-container-card">
+        <div class="pricing-table-wrapper">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th class="col-duration">Продолжительность</th>
+                <th>2 гостя</th>
+                <th>4 гостя</th>
+                <th>6 гостей</th>
+                <th>8 гостей</th>
+                <th>10 гостей</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="row-duration">5 дней / 4 ночей</td>
+                <td class="price-val">1,600 USD</td>
+                <td class="price-val">1,300 USD</td>
+                <td class="price-val">1,200 USD</td>
+                <td class="price-val">1,100 USD</td>
+                <td class="price-val">1,000 USD</td>
+              </tr>
+              <tr>
+                <td class="row-duration">6 дней / 5 ночей</td>
+                <td class="price-val">1,700 USD</td>
+                <td class="price-val">1,400 USD</td>
+                <td class="price-val">1,300 USD</td>
+                <td class="price-val">1,200 USD</td>
+                <td class="price-val">1,100 USD</td>
+              </tr>
+              <tr>
+                <td class="row-duration">7 дней / 6 ночей</td>
+                <td class="price-val">1,900 USD</td>
+                <td class="price-val">1,600 USD</td>
+                <td class="price-val">1,400 USD</td>
+                <td class="price-val">1,300 USD</td>
+                <td class="price-val">1,200 USD</td>
+              </tr>
+              <tr>
+                <td class="row-duration">8 дней / 7 ночей</td>
+                <td class="price-val">2,100 USD</td>
+                <td class="price-val">1,800 USD</td>
+                <td class="price-val">1,500 USD</td>
+                <td class="price-val">1,400 USD</td>
+                <td class="price-val">1,300 USD</td>
+              </tr>
+              <tr>
+                <td class="row-duration">10 дней / 9 ночей</td>
+                <td class="price-val">2,400 USD</td>
+                <td class="price-val">2,100 USD</td>
+                <td class="price-val">1,900 USD</td>
+                <td class="price-val">1,700 USD</td>
+                <td class="price-val">1,600 USD</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="pricing-disclaimer">
+          <p>Стоимость указана за одного гостя при соответствующем размере группы.</p>
+          <p>Поезда, внутренние перелёты и изменения программы рассчитываются отдельно.</p>
+        </div>
+        
+        <div class="pricing-footer-info">
+          <div class="pricing-note">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span>В стоимость тура входит: проживание в отелях, комфортабельный транспорт, услуги гида, экскурсии и трансферы.</span>
+          </div>
+          <a href="https://wa.me/998974230011?text=Здравствуйте!%20Хочу%20узнать%20подробности%20и%20забронировать%20тур" target="_blank" class="btn-primary pricing-cta-btn">
+            Забронировать тур
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       ADDITIONAL TOURS & TICKETS SECTION
+       =================================================== -->
+  <section class="section-tickets" id="tours" data-cms-block="tickets">
+    <div class="container">
+      <div class="section-header-center">
+        <h2 class="section-title-serif" data-cms-text="tickets_title">ДОПОЛНИТЕЛЬНЫЕ ЭКСКУРСИИ И МАРШРУТЫ</h2>
+        <p class="section-subtitle" data-cms-text="tickets_subtitle">Выберите однодневные выезды и короткие туры для разнообразия вашего отдыха</p>
+      </div>
+
+      <div class="tickets-grid">
+
+        <!-- Ticket 1: Aral Sea -->
+        <div class="ticket-card">
+          <div class="ticket-main">
+            <h3 class="ticket-title">АРАЛЬСКОЕ МОРЕ И МУЙНАК</h3>
+            <p class="ticket-duration">экспедиция к кладбищу кораблей / 2 дня</p>
+            <div class="ticket-tags">
+              <span class="ticket-tag">кладбище кораблей</span>
+              <span class="ticket-tag">плато Устюрт</span>
+              <span class="ticket-tag">юртовый лагерь</span>
+              <span class="ticket-tag">питание: 3-разовое</span>
+            </div>
+          </div>
+          <div class="ticket-stub">
+            <div class="ticket-stamp-photo">
+              <img src="assets/images/ticket_aral.webp" alt="Аральское море" width="280" height="190" loading="lazy" decoding="async" />
+            </div>
+            <div class="ticket-qr-container">
+              <img src="assets/icons/ticket_qr.svg" alt="QR-код" class="ticket-qr-code" width="60" height="60" />
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Ticket 3: Mountain Trekking -->
+        <div class="ticket-card">
+          <div class="ticket-main">
+            <h3 class="ticket-title">ХАЙКИНГ И ТРЕККИНГ В ГОРАХ</h3>
+            <p class="ticket-duration">живописные эко-тропы Западного Тянь-Шаня / 1-2 дня</p>
+            <div class="ticket-tags">
+              <span class="ticket-tag">горные ущелья</span>
+              <span class="ticket-tag">водопады</span>
+              <span class="ticket-tag">панорамные вершины</span>
+              <span class="ticket-tag">питание: завтрак и обеды</span>
+            </div>
+          </div>
+          <div class="ticket-stub">
+            <div class="ticket-stamp-photo">
+              <img src="assets/images/ticket_hiking.webp" alt="Хайкинг в горах" width="280" height="190" loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="ticket-qr-container">
+              <img src="assets/icons/ticket_qr.svg" alt="QR-код" class="ticket-qr-code" width="60" height="60" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Ticket 4: Jade Lakes (Urungach) -->
+        <div class="ticket-card">
+          <div class="ticket-main">
+            <h3 class="ticket-title">НЕФРИТОВЫЕ ОЗЁРА (УРУНГАЧ)</h3>
+            <p class="ticket-duration">бирюзовое чудо Угам-Чаткала / 1 день</p>
+            <div class="ticket-tags">
+              <span class="ticket-tag">кристальная вода</span>
+              <span class="ticket-tag">горное ущелье</span>
+              <span class="ticket-tag">фотолокации</span>
+              <span class="ticket-tag">питание: завтрак и обед</span>
+            </div>
+          </div>
+          <div class="ticket-stub">
+            <div class="ticket-stamp-photo">
+              <img src="assets/images/ticket_urungach.webp" alt="Нефритовые озёра Урунгач" width="280" height="190"
+                loading="lazy" decoding="async" />
+            </div>
+            <div class="ticket-qr-container">
+              <img src="assets/icons/ticket_qr.svg" alt="QR-код" class="ticket-qr-code" width="60" height="60" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Ticket 5: Hunting -->
+        <div class="ticket-card">
+          <div class="ticket-main">
+            <h3 class="ticket-title">ОХОТА В ГОРАХ</h3>
+            <p class="ticket-duration">авторский экспедиционный тур с егерем / 1-3 дня</p>
+            <div class="ticket-tags">
+              <span class="ticket-tag">дикая природа</span>
+              <span class="ticket-tag">опытные проводники</span>
+              <span class="ticket-tag">снаряжение</span>
+              <span class="ticket-tag">питание: завтрак и обеды</span>
+            </div>
+          </div>
+          <div class="ticket-stub">
+            <div class="ticket-stamp-photo">
+              <img src="assets/images/ticket_hunting.webp" alt="Охота в горах" width="280" height="190" loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="ticket-qr-container">
+              <img src="assets/icons/ticket_qr.svg" alt="QR-код" class="ticket-qr-code" width="60" height="60" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Ticket 6: Malaysia (внизу) -->
+        <div class="ticket-card">
+          <div class="ticket-main">
+            <h3 class="ticket-title">МАЛАЙЗИЯ (КУАЛА-ЛУМПУР)</h3>
+            <p class="ticket-duration">дополнительное зарубежное направление</p>
+            <div class="ticket-tags">
+              <span class="ticket-tag">башни Петронас</span>
+              <span class="ticket-tag">тропические парки</span>
+              <span class="ticket-tag">небоскрёбы</span>
+              <span class="ticket-tag">питание: завтрак и обеды</span>
+            </div>
+          </div>
+          <div class="ticket-stub">
+            <div class="ticket-stamp-photo">
+              <img src="assets/images/ticket_malaysia.webp" alt="Малайзия Куала-Лумпур" width="280" height="190"
+                loading="lazy" decoding="async" />
+            </div>
+            <div class="ticket-qr-container">
+              <img src="assets/icons/ticket_qr.svg" alt="QR-код" class="ticket-qr-code" width="60" height="60" />
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Customization Banner -->
+      <div class="custom-tour-cta">
+        <div class="custom-tour-text">
+          <h3>Понравилась программа, но хотите изменить детали?</h3>
+          <p>Мы легко адаптируем любой тур под Ваши даты, добавим свободный день для шоппинга или подберем отель
+            определенного класса.</p>
+        </div>
+        <button class="btn-gold js-open-modal">Получить предложение</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Torn Paper Transition -->
+  <div class="torn-divider-top"></div>
+
+  <!-- ===================================================
+       HOTELS SECTION ("ОТЕЛИ ПО ПРОГРАММЕ...")
+       =================================================== -->
+  <section class="section-hotels" id="hotels" data-cms-block="hotels">
+    <div class="container">
+      <div class="section-header-center">
+        <h2 class="section-title-serif" data-cms-text="hotels_title">ОТЕЛИ ПО ПРОГРАММЕ ИЛИ АНАЛОГИЧНЫЕ ЭТИМ ОТЕЛЯМ</h2>
+        <p class="section-subtitle" data-cms-text="hotels_subtitle">Отели как в программе или аналогичные этим отелям: душевный сервис, колоритный
+          интерьер и отличное расположение</p>
+      </div>
+
+      <div class="hotels-slider-wrapper">
+        <div class="hotels-carousel">
+
+          <!-- Hotel 1: Tashkent -->
+          <div class="hotel-card">
+            <div class="hotel-photo-container js-hotel-slider">
+              <div class="hotel-slides-track">
+                <img src="assets/images/hotels/aster_1.jpg" alt="Aster Group of Hotels — Ташкент" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+                <img src="assets/images/hotels/aster_2.jpg" alt="Aster Group of Hotels — номер" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+                <img src="assets/images/hotels/aster_3.jpg" alt="Aster Group of Hotels — лобби" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+              </div>
+              <button type="button" class="hotel-nav-btn prev" aria-label="Предыдущее фото">‹</button>
+              <button type="button" class="hotel-nav-btn next" aria-label="Следующее фото">›</button>
+              <div class="hotel-slider-dots">
+                <span class="hotel-slider-dot active" data-index="0"></span>
+                <span class="hotel-slider-dot" data-index="1"></span>
+                <span class="hotel-slider-dot" data-index="2"></span>
+              </div>
+              <span class="hotel-city-badge">Ташкент</span>
+            </div>
+            <div class="hotel-body">
+              <h4>Aster Group of Hotels</h4>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">Современный премиум отель в центре столицы</p>
+              <div class="hotel-features">
+                <span class="hotel-tag">Фитнес</span>
+                <span class="hotel-tag">СПА</span>
+                <span class="hotel-tag">Ресторан</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotel 2: Samarkand -->
+          <div class="hotel-card">
+            <div class="hotel-photo-container js-hotel-slider">
+              <div class="hotel-slides-track">
+                <img src="assets/images/hotels/east_star_1.jpg" alt="East Star Samarkand" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+                <img src="assets/images/hotels/east_star_2.jpg" alt="East Star — номер" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+                <img src="assets/images/hotels/east_star_3.webp" alt="East Star — интерьер" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+              </div>
+              <button type="button" class="hotel-nav-btn prev" aria-label="Предыдущее фото">‹</button>
+              <button type="button" class="hotel-nav-btn next" aria-label="Следующее фото">›</button>
+              <div class="hotel-slider-dots">
+                <span class="hotel-slider-dot active" data-index="0"></span>
+                <span class="hotel-slider-dot" data-index="1"></span>
+                <span class="hotel-slider-dot" data-index="2"></span>
+              </div>
+              <span class="hotel-city-badge">Самарканд</span>
+            </div>
+            <div class="hotel-body">
+              <h4>East Star Hotel</h4>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">В шаговой доступности от площади Регистан</p>
+              <div class="hotel-features">
+                <span class="hotel-tag">Комфорт</span>
+                <span class="hotel-tag">Сад</span>
+                <span class="hotel-tag">Завтрак</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotel 3: Bukhara -->
+          <div class="hotel-card">
+            <div class="hotel-photo-container js-hotel-slider">
+              <div class="hotel-slides-track">
+                <img src="assets/images/hotels/komil_1.jpg" alt="Komil Boutique Hotel Bukhara" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+                <img src="assets/images/hotels/komil_2.jpg" alt="Komil Boutique — интерьер" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+                <img src="assets/images/hotels/komil_3.jpg" alt="Komil Boutique — дворик" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+              </div>
+              <button type="button" class="hotel-nav-btn prev" aria-label="Предыдущее фото">‹</button>
+              <button type="button" class="hotel-nav-btn next" aria-label="Следующее фото">›</button>
+              <div class="hotel-slider-dots">
+                <span class="hotel-slider-dot active" data-index="0"></span>
+                <span class="hotel-slider-dot" data-index="1"></span>
+                <span class="hotel-slider-dot" data-index="2"></span>
+              </div>
+              <span class="hotel-city-badge">Бухара</span>
+            </div>
+            <div class="hotel-body">
+              <h4>Komil Boutique Hotel</h4>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">Аутентичный отель в старинном купеческом доме</p>
+              <div class="hotel-features">
+                <span class="hotel-tag">Резной ганч</span>
+                <span class="hotel-tag">Дворик</span>
+                <span class="hotel-tag">Колорит</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotel 4: Khiva -->
+          <div class="hotel-card">
+            <div class="hotel-photo-container js-hotel-slider">
+              <div class="hotel-slides-track">
+                <img src="assets/images/hotels/jamil_1.jpg" alt="Jamil Palace Khiva" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+                <img src="assets/images/hotels/jamil_2.jpg" alt="Jamil Palace — номер" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+                <img src="assets/images/hotels/jamil_3.jpg" alt="Jamil Palace — фасад" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+              </div>
+              <button type="button" class="hotel-nav-btn prev" aria-label="Предыдущее фото">‹</button>
+              <button type="button" class="hotel-nav-btn next" aria-label="Следующее фото">›</button>
+              <div class="hotel-slider-dots">
+                <span class="hotel-slider-dot active" data-index="0"></span>
+                <span class="hotel-slider-dot" data-index="1"></span>
+                <span class="hotel-slider-dot" data-index="2"></span>
+              </div>
+              <span class="hotel-city-badge">Хива</span>
+            </div>
+            <div class="hotel-body">
+              <h4>Jamil Palace</h4>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">У самых ворот древнего города Ичан-Кала</p>
+              <div class="hotel-features">
+                <span class="hotel-tag">Уют</span>
+                <span class="hotel-tag">Панорама</span>
+                <span class="hotel-tag">Завтрак</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotel 5: Safari Yurt Camp -->
+          <div class="hotel-card">
+            <div class="hotel-photo-container js-hotel-slider">
+              <div class="hotel-slides-track">
+                <img src="assets/images/hotels/safari_1.jpg" alt="Safari Yurt Camp" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+                <img src="assets/images/hotels/safari_2.jpg" alt="Safari Yurt Camp — юрты" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+                <img src="assets/images/hotels/safari_3.jpg" alt="Safari Yurt Camp — пустыня" width="300" height="240"
+                  loading="lazy" decoding="async" class="hotel-slide" />
+              </div>
+              <button type="button" class="hotel-nav-btn prev" aria-label="Предыдущее фото">‹</button>
+              <button type="button" class="hotel-nav-btn next" aria-label="Следующее фото">›</button>
+              <div class="hotel-slider-dots">
+                <span class="hotel-slider-dot active" data-index="0"></span>
+                <span class="hotel-slider-dot" data-index="1"></span>
+                <span class="hotel-slider-dot" data-index="2"></span>
+              </div>
+              <span class="hotel-city-badge">Кызылкум</span>
+            </div>
+            <div class="hotel-body">
+              <h4>Safari Yurt Camp</h4>
+              <p style="color: var(--color-text-muted); font-size: 0.9rem;">Эко-лагерь юрт под звёздным небом пустыни</p>
+              <div class="hotel-features">
+                <span class="hotel-tag">Ночь под звёздами</span>
+                <span class="hotel-tag">Верблюды</span>
+                <span class="hotel-tag">Вечер у костра</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================
+       GUESTS & REVIEWS SECTION ("НАШИ ДОРОГИЕ ГОСТИ")
+       =================================================== -->
+  <section class="section-guests" id="guests" data-cms-block="guests">
+    <div class="container">
+      <div class="section-header-center">
+        <h2 class="section-title-serif" data-cms-text="guests_title">НАШИ ДОРОГИЕ ГОСТИ</h2>
+        <p class="section-subtitle" data-cms-text="guests_subtitle">Живые эмоции, фото из путешествий и честные видео-отзывы людей, доверивших нам свой
+          отдых</p>
+
+        <div class="guest-actions-bar">
+          <button type="button" class="btn-gold js-open-guest-review-modal">
+            <span class="btn-icon">✍️</span> <span data-i18n="btn_leave_review">Оставить отзыв</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Unified Horizontal Reviews Slider -->
+      <div class="guest-slider-wrapper">
+        <button type="button" class="guest-slider-btn prev" id="guest-slider-prev"
+          aria-label="Предыдущий отзыв">‹</button>
+
+        <div class="guest-slider-track" id="guest-reviews-track">
+          <!-- Default Reviews Slides (also rendered dynamically via js/admin.js) -->
+          <div class="guest-review-slide">
+            <div class="review-slide-media js-open-video-modal" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+              <img src="assets/images/polaroid_samarkand.webp" alt="Елена и Михаил" width="360" height="210"
+                loading="lazy" />
+              <div class="video-play-btn">▶</div>
+              <span class="video-duration-badge">01:45</span>
+              <span class="media-type-badge video-badge">📹 Видео-отзыв</span>
+            </div>
+            <div class="review-slide-body">
+              <div class="review-slide-header">
+                <div class="review-avatar">ЕМ</div>
+                <div class="review-slide-meta">
+                  <h5>Елена и Михаил</h5>
+                  <span class="review-date">Москва • Гранд тур</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <div class="review-slide-text">
+                <p>«Встретили как родных. Организация гидов, отели и дегустации плова в Самарканде — 10 из 10!»</p>
+              </div>
+              <button type="button" class="btn-watch-video js-open-video-modal"
+                data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">▶ Смотреть видео</button>
+            </div>
+          </div>
+
+          <div class="guest-review-slide">
+            <div class="review-slide-media js-open-video-modal" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+              <img src="assets/images/hero_khiva.webp" alt="Андрей В." width="360" height="210" loading="lazy" />
+              <div class="video-play-btn">▶</div>
+              <span class="video-duration-badge">02:10</span>
+              <span class="media-type-badge video-badge">📹 Видео-отзыв</span>
+            </div>
+            <div class="review-slide-body">
+              <div class="review-slide-header">
+                <div class="review-avatar">АВ</div>
+                <div class="review-slide-meta">
+                  <h5>Андрей В.</h5>
+                  <span class="review-date">Санкт-Петербург</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <div class="review-slide-text">
+                <p>«Каждая деталь продумана. Сократ постоянно на связи, отели — восторг. Закат в Хиве не забуду
+                  никогда!»</p>
+              </div>
+              <button type="button" class="btn-watch-video js-open-video-modal"
+                data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">▶ Смотреть видео</button>
+            </div>
+          </div>
+
+          <div class="guest-review-slide">
+            <div class="review-slide-media js-open-video-modal" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+              <img src="assets/images/polaroid_bukhara.webp" alt="Семья Соколовых" width="360" height="210"
+                loading="lazy" />
+              <div class="video-play-btn">▶</div>
+              <span class="video-duration-badge">01:30</span>
+              <span class="media-type-badge video-badge">📹 Видео-отзыв</span>
+            </div>
+            <div class="review-slide-body">
+              <div class="review-slide-header">
+                <div class="review-avatar">СС</div>
+                <div class="review-slide-meta">
+                  <h5>Семья Соколовых</h5>
+                  <span class="review-date">Екатеринбург</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <div class="review-slide-text">
+                <p>«Ездили всей семьёй с детьми. Ночёвка в юртах в пустыне и канатная дорога в Чимгане — главное
+                  впечатление года!»</p>
+              </div>
+              <button type="button" class="btn-watch-video js-open-video-modal"
+                data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">▶ Смотреть видео</button>
+            </div>
+          </div>
+
+          <div class="guest-review-slide">
+            <div class="review-slide-media js-open-lightbox" data-img="assets/images/day6_registan_night.webp"
+              data-caption="Ольга Кравцова">
+              <img src="assets/images/day6_registan_night.webp" alt="Ольга Кравцова" width="360" height="210"
+                loading="lazy" />
+              <span class="media-type-badge photo-badge">📸 Фото из поездки</span>
+            </div>
+            <div class="review-slide-body">
+              <div class="review-slide-header">
+                <div class="review-avatar">ОК</div>
+                <div class="review-slide-meta">
+                  <h5>Ольга Кравцова</h5>
+                  <span class="review-date">Ташкент • Самарканд</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <div class="review-slide-text">
+                <p>«Огромная благодарность команде SK Travels и лично Сократу за безупречную организацию нашего
+                  8-дневного тура! Автомобиль премиум класса, гиды с глубочайшими знаниями истории, а отели в Хиве и
+                  Бухаре — просто шедевры!»</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="guest-review-slide">
+            <div class="review-slide-media js-open-lightbox" data-img="assets/images/day2_food.webp"
+              data-caption="Дмитрий и Мария">
+              <img src="assets/images/day2_food.webp" alt="Дмитрий и Мария" width="360" height="210" loading="lazy" />
+              <span class="media-type-badge photo-badge">📸 Фото из поездки</span>
+            </div>
+            <div class="review-slide-body">
+              <div class="review-slide-header">
+                <div class="review-avatar">ДМ</div>
+                <div class="review-slide-meta">
+                  <h5>Дмитрий и Мария</h5>
+                  <span class="review-date">Индивидуальный тур</span>
+                </div>
+                <div class="review-stars">★★★★★</div>
+              </div>
+              <div class="review-slide-text">
+                <p>«Ездили в индивидуальный тур на наш юбилей. Забота о нас ощущалась в каждой мелочи: от встречи у
+                  трапа до сюрпризов в отелях. Если в Узбекистан — только с SK Travels!»</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="guest-slider-btn next" id="guest-slider-next"
+          aria-label="Следующий отзыв">›</button>
+      </div>
+
+      <div class="guest-slider-hint">
+        <span>⟵ Листайте отзывы вбок ⟶</span>
+      </div>
+
+      <!-- ===================================================
+           GUEST PHOTO GALLERY (ТАШКЕНТ / САМАРКАНД И БУХАРА / ГОРЫ)
+           =================================================== -->
+      <div class="guest-gallery-section" id="guest-gallery">
+        <div class="guest-gallery-header">
+          <div class="gallery-pill-badge">ЖИВЫЕ КАДРЫ ИЗ ПУТЕШЕСТВИЙ</div>
+          <h3 class="guest-gallery-title">Фотографии наших гостей</h3>
+          <p class="guest-gallery-subtitle">Посмотрите реальные впечатления путешественников по ключевым направлениям Узбекистана</p>
+        </div>
+
+        <!-- Gallery Tabs Navigation -->
+        <div class="guest-gallery-tabs" role="tablist" aria-label="Вкладки фотографий">
+          <button type="button" class="guest-gallery-tab-btn active" data-tab="tashkent" role="tab" aria-selected="true" id="tab-tashkent">
+            <span class="tab-btn-icon">🏙️</span>
+            <span class="tab-btn-text">Фотографии с Ташкента</span>
+            <span class="tab-btn-count">1</span>
+          </button>
+          <button type="button" class="guest-gallery-tab-btn" data-tab="samarkand_bukhara" role="tab" aria-selected="false" id="tab-samarkand_bukhara">
+            <span class="tab-btn-icon">🕌</span>
+            <span class="tab-btn-text">Фотографии с Самарканда и Бухары</span>
+            <span class="tab-btn-count">34</span>
+          </button>
+          <button type="button" class="guest-gallery-tab-btn" data-tab="mountains" role="tab" aria-selected="false" id="tab-mountains">
+            <span class="tab-btn-icon">🏔️</span>
+            <span class="tab-btn-text">Фотографии с гор</span>
+            <span class="tab-btn-count">5</span>
+          </button>
+        </div>
+
+        <!-- Gallery Tab Panels -->
+        <div class="guest-gallery-panels">
+          <!-- 1. Вкладка: Фотографии с Ташкента -->
+          <div class="guest-gallery-panel active" id="panel-tashkent" role="tabpanel" aria-labelledby="tab-tashkent">
+            <div class="guest-gallery-grid">
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="tashkent" data-index="0" data-img="assets/gallery/tashkent/tashkent_1.jpg" data-caption="Ташкент • Живые кадры">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/tashkent/tashkent_1.jpg" alt="Фотография с Ташкента" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Ташкент</span>
+                  <span class="gallery-card-desc">Magic City и вечерние огни столицы</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Вкладка: Фотографии с Самарканда и Бухары -->
+          <div class="guest-gallery-panel" id="panel-samarkand_bukhara" role="tabpanel" aria-labelledby="tab-samarkand_bukhara" style="display: none;">
+            <div class="guest-gallery-grid">
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="0" data-img="assets/gallery/samarkand_bukhara/sam_bukh_1.jpg" data-caption="Самарканд и Бухара • Кадр 1 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_1.jpg" alt="Самарканд и Бухара фото 1" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">1 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="1" data-img="assets/gallery/samarkand_bukhara/sam_bukh_2.jpg" data-caption="Самарканд и Бухара • Кадр 2 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_2.jpg" alt="Самарканд и Бухара фото 2" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">2 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="2" data-img="assets/gallery/samarkand_bukhara/sam_bukh_3.jpg" data-caption="Самарканд и Бухара • Кадр 3 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_3.jpg" alt="Самарканд и Бухара фото 3" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">3 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="3" data-img="assets/gallery/samarkand_bukhara/sam_bukh_4.jpg" data-caption="Самарканд и Бухара • Кадр 4 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_4.jpg" alt="Самарканд и Бухара фото 4" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">4 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="4" data-img="assets/gallery/samarkand_bukhara/sam_bukh_5.jpg" data-caption="Самарканд и Бухара • Кадр 5 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_5.jpg" alt="Самарканд и Бухара фото 5" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">5 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="5" data-img="assets/gallery/samarkand_bukhara/sam_bukh_6.jpg" data-caption="Самарканд и Бухара • Кадр 6 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_6.jpg" alt="Самарканд и Бухара фото 6" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">6 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="6" data-img="assets/gallery/samarkand_bukhara/sam_bukh_7.jpg" data-caption="Самарканд и Бухара • Кадр 7 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_7.jpg" alt="Самарканд и Бухара фото 7" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">7 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="7" data-img="assets/gallery/samarkand_bukhara/sam_bukh_8.jpg" data-caption="Самарканд и Бухара • Кадр 8 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_8.jpg" alt="Самарканд и Бухара фото 8" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">8 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="8" data-img="assets/gallery/samarkand_bukhara/sam_bukh_9.jpg" data-caption="Самарканд и Бухара • Кадр 9 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_9.jpg" alt="Самарканд и Бухара фото 9" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">9 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="9" data-img="assets/gallery/samarkand_bukhara/sam_bukh_10.jpg" data-caption="Самарканд и Бухара • Кадр 10 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_10.jpg" alt="Самарканд и Бухара фото 10" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">10 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="10" data-img="assets/gallery/samarkand_bukhara/sam_bukh_11.jpg" data-caption="Самарканд и Бухара • Кадр 11 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_11.jpg" alt="Самарканд и Бухара фото 11" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">11 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="11" data-img="assets/gallery/samarkand_bukhara/sam_bukh_12.jpg" data-caption="Самарканд и Бухара • Кадр 12 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_12.jpg" alt="Самарканд и Бухара фото 12" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">12 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="12" data-img="assets/gallery/samarkand_bukhara/sam_bukh_13.jpg" data-caption="Самарканд и Бухара • Кадр 13 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_13.jpg" alt="Самарканд и Бухара фото 13" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">13 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="13" data-img="assets/gallery/samarkand_bukhara/sam_bukh_14.jpg" data-caption="Самарканд и Бухара • Кадр 14 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_14.jpg" alt="Самарканд и Бухара фото 14" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">14 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="14" data-img="assets/gallery/samarkand_bukhara/sam_bukh_15.jpg" data-caption="Самарканд и Бухара • Кадр 15 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_15.jpg" alt="Самарканд и Бухара фото 15" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">15 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="15" data-img="assets/gallery/samarkand_bukhara/sam_bukh_16.jpg" data-caption="Самарканд и Бухара • Кадр 16 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_16.jpg" alt="Самарканд и Бухара фото 16" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">16 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="16" data-img="assets/gallery/samarkand_bukhara/sam_bukh_17.jpg" data-caption="Самарканд и Бухара • Кадр 17 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_17.jpg" alt="Самарканд и Бухара фото 17" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">17 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="17" data-img="assets/gallery/samarkand_bukhara/sam_bukh_18.jpg" data-caption="Самарканд и Бухара • Кадр 18 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_18.jpg" alt="Самарканд и Бухара фото 18" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">18 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="18" data-img="assets/gallery/samarkand_bukhara/sam_bukh_19.jpg" data-caption="Самарканд и Бухара • Кадр 19 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_19.jpg" alt="Самарканд и Бухара фото 19" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">19 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="19" data-img="assets/gallery/samarkand_bukhara/sam_bukh_20.jpg" data-caption="Самарканд и Бухара • Кадр 20 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_20.jpg" alt="Самарканд и Бухара фото 20" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">20 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="20" data-img="assets/gallery/samarkand_bukhara/sam_bukh_21.jpg" data-caption="Самарканд и Бухара • Кадр 21 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_21.jpg" alt="Самарканд и Бухара фото 21" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">21 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="21" data-img="assets/gallery/samarkand_bukhara/sam_bukh_22.jpg" data-caption="Самарканд и Бухара • Кадр 22 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_22.jpg" alt="Самарканд и Бухара фото 22" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">22 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="22" data-img="assets/gallery/samarkand_bukhara/sam_bukh_23.jpg" data-caption="Самарканд и Бухара • Кадр 23 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_23.jpg" alt="Самарканд и Бухара фото 23" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">23 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="23" data-img="assets/gallery/samarkand_bukhara/sam_bukh_24.jpg" data-caption="Самарканд и Бухара • Кадр 24 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_24.jpg" alt="Самарканд и Бухара фото 24" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">24 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="24" data-img="assets/gallery/samarkand_bukhara/sam_bukh_25.jpg" data-caption="Самарканд и Бухара • Кадр 25 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_25.jpg" alt="Самарканд и Бухара фото 25" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">25 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="25" data-img="assets/gallery/samarkand_bukhara/sam_bukh_26.jpg" data-caption="Самарканд и Бухара • Кадр 26 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_26.jpg" alt="Самарканд и Бухара фото 26" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">26 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="26" data-img="assets/gallery/samarkand_bukhara/sam_bukh_27.jpg" data-caption="Самарканд и Бухара • Кадр 27 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_27.jpg" alt="Самарканд и Бухара фото 27" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">27 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="27" data-img="assets/gallery/samarkand_bukhara/sam_bukh_28.jpg" data-caption="Самарканд и Бухара • Кадр 28 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_28.jpg" alt="Самарканд и Бухара фото 28" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">28 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="28" data-img="assets/gallery/samarkand_bukhara/sam_bukh_29.jpg" data-caption="Самарканд и Бухара • Кадр 29 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_29.jpg" alt="Самарканд и Бухара фото 29" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">29 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="29" data-img="assets/gallery/samarkand_bukhara/sam_bukh_30.jpg" data-caption="Самарканд и Бухара • Кадр 30 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_30.jpg" alt="Самарканд и Бухара фото 30" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">30 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="30" data-img="assets/gallery/samarkand_bukhara/sam_bukh_31.jpg" data-caption="Самарканд и Бухара • Кадр 31 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_31.jpg" alt="Самарканд и Бухара фото 31" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">31 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="31" data-img="assets/gallery/samarkand_bukhara/sam_bukh_32.jpg" data-caption="Самарканд и Бухара • Кадр 32 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_32.jpg" alt="Самарканд и Бухара фото 32" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">32 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="32" data-img="assets/gallery/samarkand_bukhara/sam_bukh_33.jpg" data-caption="Самарканд и Бухара • Кадр 33 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_33.jpg" alt="Самарканд и Бухара фото 33" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">33 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="samarkand_bukhara" data-index="33" data-img="assets/gallery/samarkand_bukhara/sam_bukh_34.jpg" data-caption="Самарканд и Бухара • Кадр 34 из 34">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/samarkand_bukhara/sam_bukh_34.jpg" alt="Самарканд и Бухара фото 34" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">34 / 34</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Самарканд и Бухара</span>
+                  <span class="gallery-card-desc">Восточная архитектура и памятники ЮНЕСКО</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Вкладка: Фотографии с гор -->
+          <div class="guest-gallery-panel" id="panel-mountains" role="tabpanel" aria-labelledby="tab-mountains" style="display: none;">
+            <div class="guest-gallery-grid">
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="mountains" data-index="0" data-img="assets/gallery/mountains/mountain_1.jpg" data-caption="Горы Узбекистана • Кадр 1 из 5">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/mountains/mountain_1.jpg" alt="Горы Узбекистана фото 1" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">1 / 5</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Чимган и Бельдерсай</span>
+                  <span class="gallery-card-desc">Горные хребты, канатная дорога и панорамы</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="mountains" data-index="1" data-img="assets/gallery/mountains/mountain_2.jpg" data-caption="Горы Узбекистана • Кадр 2 из 5">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/mountains/mountain_2.jpg" alt="Горы Узбекистана фото 2" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">2 / 5</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Чимган и Бельдерсай</span>
+                  <span class="gallery-card-desc">Горные хребты, канатная дорога и панорамы</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="mountains" data-index="2" data-img="assets/gallery/mountains/mountain_3.jpg" data-caption="Горы Узбекистана • Кадр 3 из 5">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/mountains/mountain_3.jpg" alt="Горы Узбекистана фото 3" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">3 / 5</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Чимган и Бельдерсай</span>
+                  <span class="gallery-card-desc">Горные хребты, канатная дорога и панорамы</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="mountains" data-index="3" data-img="assets/gallery/mountains/mountain_4.jpg" data-caption="Горы Узбекистана • Кадр 4 из 5">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/mountains/mountain_4.jpg" alt="Горы Узбекистана фото 4" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">4 / 5</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Чимган и Бельдерсай</span>
+                  <span class="gallery-card-desc">Горные хребты, канатная дорога и панорамы</span>
+                </div>
+              </div>
+              <div class="guest-gallery-card js-open-gallery-lightbox" data-category="mountains" data-index="4" data-img="assets/gallery/mountains/mountain_5.jpg" data-caption="Горы Узбекистана • Кадр 5 из 5">
+                <div class="gallery-card-image-wrap">
+                  <img src="assets/gallery/mountains/mountain_5.jpg" alt="Горы Узбекистана фото 5" loading="lazy" decoding="async" />
+                  <div class="gallery-card-hover-mask">
+                    <span class="gallery-hover-icon">🔍</span>
+                    <span class="gallery-hover-text">Смотреть фото</span>
+                  </div>
+                  <span class="gallery-card-badge">5 / 5</span>
+                </div>
+                <div class="gallery-card-caption">
+                  <span class="gallery-card-loc">Чимган и Бельдерсай</span>
+                  <span class="gallery-card-desc">Горные хребты, канатная дорога и панорамы</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ===================================================
+       SMOOTH CURVED WAVE TRANSITION (ГОЛУБОЙ ПЕРЕХОД)
+       =================================================== -->
+  <div class="footer-wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+      <path class="wave-layer-soft" d="M0,22 C320,68 520,12 740,44 C960,78 1180,20 1440,50 L1440,90 L0,90 Z" fill="rgba(2, 132, 199, 0.28)"></path>
+      <path class="wave-layer-accent" d="M0,38 C260,74 480,24 720,54 C960,84 1220,34 1440,60 L1440,90 L0,90 Z" fill="rgba(56, 189, 248, 0.45)"></path>
+      <path class="wave-layer-main" d="M0,50 C280,18 540,78 820,38 C1060,2 1260,58 1440,35 L1440,90 L0,90 Z" fill="#0284C7"></path>
+    </svg>
+  </div>
+
+  <!-- ===================================================
+       FOOTER (ГОЛУБОЙ ЭЛЕГАНТНЫЙ СТИЛЬ & ПОЛНЫЕ КОНТАКТЫ)
+       =================================================== -->
+  <footer class="site-footer" data-cms-block="contacts">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Socials -->
+        <div class="footer-col footer-col-brand">
+          <div class="logo-block" style="margin-bottom: 16px;">
+            <div class="logo-text">
+              <h1 style="color: #FFFFFF; letter-spacing: 1px;">SK Travels</h1>
+              <span style="color: #FFD166;">С заботой о каждом госте</span>
+            </div>
+          </div>
+          <p class="footer-brand-desc">Авторские индивидуальные путешествия по Узбекистану и Малайзии с заботой о каждой детали Вашего отдыха.</p>
+
+          <div class="footer-social-block">
+            <h5 class="footer-subheading">Мы в соцсетях и мессенджерах:</h5>
+            <div class="footer-social-grid">
+              <a href="https://t.me/Sokrat_100kratt" target="_blank" rel="noopener noreferrer" class="footer-social-chip tg-chip" title="Написать в Telegram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                <span>Telegram: @Sokrat_100kratt</span>
+              </a>
+
+              <a href="https://www.instagram.com/sktravels.uz/" target="_blank" rel="noopener noreferrer" class="footer-social-chip insta-chip" title="Instagram Узбекистан">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span>Instagram: @sktravels.uz</span>
+              </a>
+
+              <a href="https://www.instagram.com/sokratis.malaysiatours" target="_blank" rel="noopener noreferrer" class="footer-social-chip insta-chip" title="Instagram Малайзия">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span>Instagram: @sokratis.malaysiatours</span>
+              </a>
+
+              <a href="https://www.facebook.com/share/1ErdkEuvtm/" target="_blank" rel="noopener noreferrer" class="footer-social-chip fb-chip" title="Facebook SK Travels">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <span>Facebook: SK Travels</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div class="footer-col">
+          <h4 data-i18n="footer_nav_title">Навигация</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#itinerary" data-i18n="nav_tours">Наши туры</a></li>
+            <li><a href="#hotels" data-i18n="nav_about">Отели</a></li>
+            <li><a href="#guests">Наши гости & Отзывы</a></li>
+            <li><a href="#guest-gallery">Фотогалерея гостей</a></li>
+            <li><a href="#included" data-i18n="nav_reviews">Что включено</a></li>
+            <li><a href="#tickets" data-i18n="nav_articles">Дополнительные туры</a></li>
+            <li><a href="#map-section">Интерактивная карта</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contacts -->
+        <div class="footer-col footer-col-contacts">
+          <h4 data-i18n="footer_contacts_title">Прямые контакты</h4>
+          
+          <div class="footer-contact-item">
+            <p data-i18n="footer_phone_label">Телефон / WhatsApp</p>
+            <a href="tel:+998974230011" class="footer-phone">+998 97 423 00 11</a>
+          </div>
+
+          <div class="footer-contact-item">
+            <p data-i18n="footer_email_label">Электронная почта</p>
+            <a href="mailto:Sktravels.uz@gmail.com" class="footer-email">Sktravels.uz@gmail.com</a>
+          </div>
+
+          <div class="footer-contact-item" style="margin-top: 14px;">
+            <a href="assets/sk_travels.vcf" download="sk_travels.vcf" class="nfc-download-btn" title="Сохранить визитку в контакты телефона">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+              </svg>
+              <span>NFC Визитка (Контакты)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div data-i18n="footer_copyright">© 2026 «SK Travels». Все права защищены.</div>
+        <div data-i18n="footer_privacy">Политика конфиденциальности</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================
+       STICKY BOTTOM ACTION BAR
+       =================================================== -->
+  <aside class="sticky-action-bar" aria-label="Быстрые действия">
+    <a href="#itinerary" class="sticky-btn-gold" data-i18n="sticky_all_tours">Все туры</a>
+    <button class="sticky-btn-blue js-open-modal" data-i18n="sticky_consultation">Консультация</button>
+  </aside>
+
+  <!-- ===================================================
+       COOKIE NOTIFICATION BANNER
+       =================================================== -->
+  <aside class="cookie-banner" id="cookie-banner" aria-label="Уведомление о файлах cookie">
+    <span data-i18n="cookie_text">Сайт использует файлы cookie</span>
+    <button class="cookie-btn" id="cookie-ok-btn">OK</button>
+  </aside>
+
+  <!-- ===================================================
+       MODAL: TOUR BOOKING & CONSULTATION
+       =================================================== -->
+  <!-- ===================================================
+       MODAL: TOUR BOOKING & CONSULTATION
+       =================================================== -->
+  <div class="modal-backdrop" id="booking-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Закрыть модальное окно">&times;</button>
+      <div class="modal-header-block">
+        <span class="modal-badge-pill">✨ SK TRAVELS • БУТИК-ТУРЫ</span>
+        <h3 class="modal-title" id="booking-modal-title" data-i18n="modal_title">Забронировать тур</h3>
+        <p class="modal-subtitle" data-i18n="modal_subtitle">Оставьте контакты — с Вами свяжутся для согласования программы.</p>
+      </div>
+
+      <form id="tour-booking-form">
+        <input type="hidden" id="selected-tour-name" value="Гранд тур по Узбекистану" />
+        
+        <div class="form-group">
+          <label class="form-label" for="client-name" data-i18n="label_name">Ваше имя *</label>
+          <div class="input-with-icon">
+            <span class="input-field-icon">👤</span>
+            <input type="text" id="client-name" class="form-input" placeholder="Как к Вам обращаться?" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="client-phone" data-i18n="label_phone">Номер телефона *</label>
+          <div class="input-with-icon">
+            <span class="input-field-icon">📞</span>
+            <input type="tel" id="client-phone" class="form-input" placeholder="+998 / +7 / +1..." required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="tour-dates" data-i18n="label_dates">Примерные даты поездки</label>
+          <div class="input-with-icon">
+            <span class="input-field-icon">📅</span>
+            <input type="text" id="tour-dates" class="form-input" placeholder="Например: Апрель 2026 или 12–20 мая" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="guests-count" data-i18n="label_guests">Количество гостей</label>
+          <div class="input-with-icon">
+            <span class="input-field-icon">👥</span>
+            <select id="guests-count" class="form-select">
+              <option value="2">2 путешественника (Оптимальный тур)</option>
+              <option value="1">1 путешественник (Индивидуально)</option>
+              <option value="3-4">3–4 путешественника</option>
+              <option value="5+">5+ человек / Семья</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-gold modal-submit-btn" data-i18n="btn_submit_request">
+          <span>✨ Отправить заявку</span>
+        </button>
+      </form>
+
+      <!-- Instant Messenger Quick Links -->
+      <div class="modal-instant-chat">
+        <span class="modal-chat-divider">или напишите напрямую в мессенджер</span>
+        <div class="modal-chat-btns">
+          <a href="https://t.me/Sokrat_100kratt" target="_blank" rel="noopener noreferrer" class="chat-btn tg-chat-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.75-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            <span>Telegram</span>
+          </a>
+          <a href="https://wa.me/998974230011?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D1%82%D1%83%D1%80." target="_blank" rel="noopener noreferrer" class="chat-btn wa-chat-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.461c-1.928 0-3.816-.518-5.464-1.498l-.392-.233-4.062 1.065 1.084-3.96-.256-.407c-1.077-1.713-1.645-3.704-1.644-5.744 0-5.967 4.856-10.823 10.826-10.823 2.89 0 5.607 1.126 7.65 3.17 2.043 2.044 3.168 4.76 3.168 7.65 0 5.968-4.856 10.824-10.826 10.824m0-23.766c-7.126 0-12.923 5.797-12.923 12.923 0 2.274.594 4.494 1.724 6.452l-1.832 6.691 6.847-1.796c1.897 1.034 4.038 1.579 6.184 1.58h.005c7.125 0 12.922-5.797 12.922-12.923 0-3.452-1.344-6.697-3.788-9.141-2.444-2.444-5.688-3.786-9.139-3.786z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+
+      <div id="modal-success-message" style="display: none; text-align: center; padding: 24px 10px;">
+        <div style="font-size: 3.5rem; margin-bottom: 12px; animation: popIn 0.4s ease;">🎉</div>
+        <h4 style="font-family: var(--font-serif); font-size: 1.6rem; color: #0F172A; margin-bottom: 8px;">Заявка успешно отправлена!</h4>
+        <p style="color: var(--color-text-muted); font-size: 0.98rem; line-height: 1.6; margin-bottom: 18px;">
+          Ваш запрос передан в SK Travels и дублирован на почту 
+          <strong style="color: #0284C7;" class="modal-success-email-notice">Sktravels.uz@gmail.com</strong>.<br>
+          С Вами свяжутся для согласования программы путешествия!
+        </p>
+        <button type="button" class="btn-gold" id="booking-success-close-btn" style="padding: 10px 24px; font-size: 0.9rem;">Понятно, спасибо!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MODAL: LEAVE GUEST REVIEW
+       =================================================== -->
+  <div class="modal-backdrop" id="guest-review-modal">
+    <div class="modal-card guest-modal-card"
+      style="max-width: 540px; background: #0B1120; border: 1px solid rgba(212,175,55,0.3); border-radius: 16px; padding: 24px; color: #fff; position: relative; box-shadow: 0 15px 40px rgba(0,0,0,0.5);">
+      <button type="button" class="modal-close-btn" id="close-guest-review-modal"
+        style="color: #fff; top: 12px; right: 16px; font-size: 1.8rem; background: none; border: none; cursor: pointer;" aria-label="Закрыть модальное окно">&times;</button>
+
+      <h3
+        style="font-family: 'Cinzel', serif; color: #D4AF37; margin-top: 0; margin-bottom: 6px; font-size: 1.35rem;">
+        ✍️ Оставить отзыв о путешествии</h3>
+      <p style="color: #9CA3AF; font-size: 0.85rem; margin-top: 0; margin-bottom: 20px;">Поделитесь эмоциями от
+        поездки. Ваш отзыв появится на сайте для всех путешественников!</p>
+
+      <form id="guest-submit-review-form">
+        <div class="admin-form-group">
+          <label class="admin-form-label" style="color: #D4AF37; font-weight: 600;">Ваша оценка *</label>
+          <div class="guest-star-rating-selector" id="guest-star-rating"
+            style="display: flex; gap: 10px; font-size: 1.8rem; cursor: pointer; color: #D4AF37; margin-top: 4px;">
+            <span data-star="1" class="active-star">★</span>
+            <span data-star="2" class="active-star">★</span>
+            <span data-star="3" class="active-star">★</span>
+            <span data-star="4" class="active-star">★</span>
+            <span data-star="5" class="active-star">★</span>
+          </div>
+          <input type="hidden" id="guest-review-stars" value="5" />
+        </div>
+
+        <div class="admin-form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div>
+            <label class="admin-form-label">Ваше имя *</label>
+            <input type="text" id="guest-review-name" class="admin-form-input"
+              placeholder="Например: Екатерина и Алексей" required />
+          </div>
+          <div>
+            <label class="admin-form-label">Город / Маршрут</label>
+            <input type="text" id="guest-review-city" class="admin-form-input" placeholder="Москва • Гранд Тур" />
+          </div>
+        </div>
+
+        <div class="admin-form-group">
+          <label class="admin-form-label">Ваш отзыв *</label>
+          <textarea id="guest-review-text" class="admin-form-textarea" rows="3"
+            placeholder="Расскажите о впечатлениях, гиде и бутик-отелях..." required></textarea>
+        </div>
+
+        <div class="admin-form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div>
+            <label class="admin-form-label">Ссылка на фото (URL)</label>
+            <input type="url" id="guest-review-photo" class="admin-form-input" placeholder="https://..." />
+          </div>
+          <div>
+            <label class="admin-form-label">Ссылка на видео (YouTube)</label>
+            <input type="url" id="guest-review-video" class="admin-form-input"
+              placeholder="https://youtube.com/..." />
+          </div>
+        </div>
+
+        <button type="submit" id="submit-guest-review-btn" class="btn-admin-gold"
+          style="width: 100%; margin-top: 12px; padding: 12px; font-size: 0.95rem;">✨ Опубликовать отзыв</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ===================================================
+       MODAL: VIDEO PLAYER POPUP
+       =================================================== -->
+  <div class="modal-backdrop" id="video-modal">
+    <div class="modal-card video-modal-card">
+      <button type="button" class="modal-close-btn" id="close-video-modal" aria-label="Закрыть видео" style="color: #fff; z-index: 10;">&times;</button>
+      <div class="video-iframe-container">
+        <iframe id="video-modal-iframe" src="" title="Видео-отзыв SK Travels" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/mobile-nav.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/cms.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+
+</html>

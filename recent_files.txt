@@ -1,0 +1,5 @@
+.\find_images.py | size: 384 bytes
+.\get_recent.py | size: 332 bytes
+.\recent_files.txt | size: 0 bytes
+.\Нефритовое озеро\image.png | size: 578463 bytes
+.\Охота\image.png | size: 2638932 bytes

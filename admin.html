@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Панель управления сайтом (CMS) | SK Travels</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    :root {
+      --admin-bg: #0B1120;
+      --admin-card-bg: #151D30;
+      --admin-border: rgba(212, 175, 55, 0.25);
+      --admin-gold: #D4AF37;
+      --admin-gold-hover: #F3E5AB;
+      --admin-text: #F3F4F6;
+      --admin-muted: #9CA3AF;
+    }
+
+    body.admin-body {
+      background-color: var(--admin-bg);
+      color: var(--admin-text);
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    .admin-header {
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid var(--admin-border);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .admin-logo-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--admin-gold);
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    .admin-logo-sub {
+      font-size: 0.8rem;
+      color: var(--admin-muted);
+    }
+
+    .admin-nav-links {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    /* Tabs Bar */
+    .admin-tabs-nav {
+      display: flex;
+      gap: 8px;
+      background: rgba(15, 23, 42, 0.8);
+      padding: 10px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      overflow-x: auto;
+    }
+
+    .admin-tab-btn {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--admin-muted);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .admin-tab-btn:hover {
+      background: rgba(212, 175, 55, 0.1);
+      color: var(--admin-gold);
+      border-color: rgba(212, 175, 55, 0.3);
+    }
+
+    .admin-tab-btn.active {
+      background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+      color: #0B1120;
+      border-color: var(--admin-gold);
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
+    }
+
+    .btn-admin-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-admin-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: var(--admin-gold);
+      color: var(--admin-gold);
+    }
+
+    .btn-admin-gold {
+      background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+      color: #0B1120;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.25);
+    }
+
+    .btn-admin-gold:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 100%);
+    }
+
+    .admin-container {
+      max-width: 1200px;
+      margin: 24px auto;
+      padding: 0 20px;
+    }
+
+    .admin-grid-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .admin-grid-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .admin-panel-card {
+      background: var(--admin-card-bg);
+      border: 1px solid var(--admin-border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      margin-bottom: 24px;
+    }
+
+    .admin-card-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.25rem;
+      color: var(--admin-gold);
+      margin-top: 0;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 12px;
+    }
+
+    .admin-form-group {
+      margin-bottom: 16px;
+    }
+
+    .admin-form-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--admin-muted);
+      margin-bottom: 6px;
+    }
+
+    .admin-form-label span.optional-badge {
+      font-size: 0.75rem;
+      color: var(--admin-gold);
+      font-weight: 500;
+      background: rgba(212, 175, 55, 0.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+
+    .admin-form-input,
+    .admin-form-select,
+    .admin-form-textarea {
+      width: 100%;
+      background: rgba(11, 17, 32, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      padding: 10px 14px;
+      color: #fff;
+      font-size: 0.9rem;
+      font-family: inherit;
+      box-sizing: border-box;
+      transition: border-color 0.2s ease;
+    }
+
+    .admin-form-input:focus,
+    .admin-form-select:focus,
+    .admin-form-textarea:focus {
+      outline: none;
+      border-color: var(--admin-gold);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+    }
+
+    .admin-form-textarea {
+      min-height: 95px;
+      resize: vertical;
+    }
+
+    .media-box-section {
+      background: rgba(11, 17, 32, 0.5);
+      border: 1px dashed rgba(212, 175, 55, 0.3);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .media-box-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--admin-gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .image-preview-box {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .image-preview-box img {
+      max-width: 100%;
+      max-height: 140px;
+      border-radius: 8px;
+      border: 1px solid var(--admin-border);
+      object-fit: cover;
+    }
+
+    .admin-items-container {
+      max-height: 650px;
+      overflow-y: auto;
+      padding-right: 6px;
+    }
+
+    .admin-items-container::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .admin-items-container::-webkit-scrollbar-thumb {
+      background: rgba(212, 175, 55, 0.3);
+      border-radius: 3px;
+    }
+
+    .admin-item-row {
+      background: rgba(11, 17, 32, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: border-color 0.2s ease;
+    }
+
+    .admin-item-row:hover {
+      border-color: rgba(212, 175, 55, 0.4);
+    }
+
+    .admin-item-thumb {
+      width: 54px;
+      height: 54px;
+      border-radius: 8px;
+      object-fit: cover;
+      background: rgba(255,255,255,0.05);
+      flex-shrink: 0;
+    }
+
+    .admin-item-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .admin-item-info strong {
+      display: block;
+      color: #fff;
+      font-size: 0.92rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .admin-item-info span.meta {
+      font-size: 0.8rem;
+      color: var(--admin-muted);
+    }
+
+    .btn-edit-item {
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--admin-gold);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-edit-item:hover {
+      background: var(--admin-gold);
+      color: #0B1120;
+    }
+
+    .btn-delete-item {
+      background: rgba(239, 68, 68, 0.15);
+      color: #FCA5A5;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-delete-item:hover {
+      background: #EF4444;
+      color: #fff;
+    }
+
+    .admin-item-avatar-circle {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #00A8E8 0%, #0077B6 100%);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 168, 232, 0.3);
+    }
+
+    .admin-review-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-top: 4px;
+    }
+
+    .admin-badge-video {
+      background: rgba(245, 158, 11, 0.15);
+      color: #FBBF24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .admin-badge-photo {
+      background: rgba(14, 165, 233, 0.15);
+      color: #38BDF8;
+      border: 1px solid rgba(14, 165, 233, 0.3);
+    }
+
+    .review-status-msg {
+      padding: 12px 16px;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      margin-bottom: 16px;
+      display: none;
+    }
+
+    .review-status-msg.success {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34D399;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+    }
+
+    .review-status-msg.error {
+      background: rgba(239, 68, 68, 0.15);
+      color: #FCA5A5;
+      border: 1px solid rgba(239, 68, 68, 0.35);
+    }
+
+    .review-status-msg.info {
+      background: rgba(212, 175, 55, 0.15);
+      color: #D4AF37;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-remove-photo {
+      background: rgba(239, 68, 68, 0.15);
+      color: #FCA5A5;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-remove-photo:hover {
+      background: #EF4444;
+      color: #fff;
+    }
+
+    /* Switch Toggles for Blocks */
+    .block-toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 18px;
+      background: rgba(11, 17, 32, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .block-toggle-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .block-toggle-title {
+      font-weight: 600;
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    .block-toggle-sub {
+      font-size: 0.8rem;
+      color: var(--admin-muted);
+    }
+
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 52px;
+      height: 28px;
+    }
+
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider-toggle {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #374151;
+      transition: .3s;
+      border-radius: 34px;
+    }
+
+    .slider-toggle:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      transition: .3s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider-toggle {
+      background: linear-gradient(135deg, #D4AF37 0%, #AA7C11 100%);
+    }
+
+    input:checked + .slider-toggle:before {
+      transform: translateX(24px);
+    }
+
+    /* Auth Overlay Screen */
+    .admin-auth-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0B1120;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+
+    .auth-card {
+      background: #151D30;
+      border: 1px solid var(--admin-border);
+      border-radius: 20px;
+      padding: 36px;
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+
+    .auth-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      color: var(--admin-gold);
+      margin-bottom: 8px;
+    }
+
+    .auth-sub {
+      color: var(--admin-muted);
+      font-size: 0.88rem;
+      margin-bottom: 24px;
+    }
+
+    .auth-error {
+      background: rgba(239, 68, 68, 0.15);
+      color: #FCA5A5;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+      display: none;
+    }
+
+    .tab-panel-content {
+      display: none;
+    }
+
+    .tab-panel-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body class="admin-body">
+
+  <!-- Password Authentication Screen -->
+  <div id="admin-auth-screen" class="admin-auth-screen">
+    <div class="auth-card">
+      <div style="font-size: 3rem; margin-bottom: 12px;">🔐</div>
+      <h2 class="auth-title">Вход в панель управления</h2>
+      <p class="auth-sub">Введите пароль для редактирования текстов, фото и отзывов SK Travels</p>
+      
+      <div id="auth-error-msg" class="auth-error">Неверный пароль!</div>
+
+      <form id="admin-auth-form">
+        <div class="admin-form-group">
+          <input type="password" id="admin-password" class="admin-form-input" placeholder="Пароль администратора" required style="text-align: center; font-size: 1.1rem; letter-spacing: 2px;" />
+        </div>
+        <button type="submit" class="btn-admin-gold" style="width: 100%; margin-top: 6px;">Войти в панель</button>
+      </form>
+      
+      <div style="margin-top: 20px;">
+        <a href="index.html" class="btn-admin-secondary" style="font-size: 0.8rem; width: 100%; justify-content: center;">← Вернуться на сайт</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Main Dashboard -->
+  <div id="admin-main-dashboard" style="display: none;">
+    <!-- Top Bar Header -->
+    <header class="admin-header">
+      <div class="admin-logo-group">
+        <div>
+          <h1 class="admin-logo-title">SK TRAVELS — CMS</h1>
+          <div class="admin-logo-sub">Полное управление сайтом</div>
+        </div>
+      </div>
+      <div class="admin-nav-links">
+        <button id="cms-save-all-btn" class="btn-admin-gold" style="padding: 8px 16px; font-size: 0.88rem;">💾 Сохранить изменения</button>
+        <a href="index.html" target="_blank" class="btn-admin-secondary">🌐 На сайт</a>
+        <button id="admin-logout-btn" class="btn-admin-secondary">🚪 Выйти</button>
+      </div>
+    </header>
+
+    <!-- Sub-Header Tabs Navigation -->
+    <nav class="admin-tabs-nav">
+      <button class="admin-tab-btn active" data-tab="tab-reviews">💬 Отзывы</button>
+      <button class="admin-tab-btn" data-tab="tab-texts">📝 Тексты сайта</button>
+      <button class="admin-tab-btn" data-tab="tab-images">🖼️ Фотографии</button>
+      <button class="admin-tab-btn" data-tab="tab-blocks">🧱 Блоки сайта</button>
+      <button class="admin-tab-btn" data-tab="tab-cloud">🔑 Облако и Бэкап</button>
+    </nav>
+
+    <main class="admin-container">
+
+      <!-- ===================================================
+           TAB 1: REVIEWS MANAGEMENT
+           =================================================== -->
+      <div id="tab-reviews" class="tab-panel-content active">
+        <div class="admin-grid-layout">
+          
+          <!-- Form: Add/Edit Review -->
+          <div class="admin-panel-card">
+            <h3 class="admin-card-title">
+              <span id="form-mode-title">✍️ Добавить новый отзыв</span>
+              <button type="button" id="cancel-edit-btn" class="btn-admin-secondary" style="display: none; font-size: 0.78rem; padding: 4px 10px;">❌ Отменить</button>
+            </h3>
+
+            <div id="review-feedback-msg" class="review-status-msg"></div>
+
+            <form id="unified-review-form">
+              <input type="hidden" id="editing-review-id" value="" />
+
+              <div class="admin-form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div>
+                  <label class="admin-form-label">Имя туриста *</label>
+                  <input type="text" id="review-name" class="admin-form-input" placeholder="Елена и Михаил" required />
+                </div>
+                <div>
+                  <label class="admin-form-label">Город / Маршрут</label>
+                  <input type="text" id="review-city" class="admin-form-input" placeholder="Москва • Гранд тур" />
+                </div>
+              </div>
+
+              <div class="admin-form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div>
+                  <label class="admin-form-label">Дата отзыва</label>
+                  <input type="text" id="review-date" class="admin-form-input" placeholder="Март 2026" />
+                </div>
+                <div>
+                  <label class="admin-form-label">Оценка</label>
+                  <select id="review-stars" class="admin-form-select">
+                    <option value="5">★★★★★ (5 звёзд)</option>
+                    <option value="4">★★★★☆ (4 звезды)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="admin-form-group">
+                <label class="admin-form-label">Текст отзыва *</label>
+                <textarea id="review-text" class="admin-form-textarea" placeholder="Впечатления от поездки, отелей и гидов..." required></textarea>
+              </div>
+
+              <!-- Photo upload -->
+              <div class="media-box-section">
+                <div class="media-box-title">
+                  <span>📸 Загрузить фото отзыва</span>
+                  <span class="optional-badge">Файл или URL</span>
+                </div>
+                <div class="admin-form-group">
+                  <input type="file" id="photo-file-input" class="admin-form-input" accept="image/*" />
+                </div>
+                <div class="admin-form-group" style="margin-bottom: 0;">
+                  <input type="url" id="photo-url-input" class="admin-form-input" placeholder="Или URL ссылки на фото" />
+                </div>
+                <div class="image-preview-box" id="photo-preview-box" style="display:none;">
+                  <img id="photo-preview-img" src="" alt="Preview" />
+                  <div>
+                    <button type="button" id="remove-photo-btn" class="btn-remove-photo">🗑️ Удалить фото</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Video upload -->
+              <div class="media-box-section">
+                <div class="media-box-title">
+                  <span>📹 Видео-отзыв (YouTube / Rutube)</span>
+                </div>
+                <div class="admin-form-group">
+                  <input type="url" id="video-url-input" class="admin-form-input" placeholder="https://youtube.com/watch?v=..." />
+                </div>
+                <div class="admin-form-group" style="margin-bottom: 0;">
+                  <input type="text" id="video-duration-input" class="admin-form-input" placeholder="01:45" value="01:45" />
+                </div>
+              </div>
+
+              <button type="submit" id="submit-review-btn" class="btn-admin-gold" style="width: 100%; margin-top: 8px;">✨ Опубликовать отзыв на сайте</button>
+            </form>
+          </div>
+
+          <!-- Reviews List -->
+          <div class="admin-panel-card">
+            <h3 class="admin-card-title">
+              <span>📋 Отзывы на сайте (<span id="total-reviews-count">0</span>)</span>
+            </h3>
+            
+            <div class="admin-items-container" id="admin-items-list">
+              <!-- Items rendered dynamically via JS -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ===================================================
+           TAB 2: SITE TEXTS MANAGEMENT
+           =================================================== -->
+      <div id="tab-texts" class="tab-panel-content">
+        <div class="admin-panel-card">
+          <h3 class="admin-card-title">📝 Редактирование текстов главной страницы</h3>
+
+          <form id="cms-texts-form">
+            <!-- Hero Block -->
+            <div style="background: rgba(11, 17, 32, 0.5); padding: 18px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.08);">
+              <h4 style="color: var(--admin-gold); margin-top: 0; margin-bottom: 14px;">🚩 Первый экран (Hero)</h4>
+              <div class="admin-form-group">
+                <label class="admin-form-label">Плашка / Берадж курса</label>
+                <input type="text" data-cms-input="hero_badge" class="admin-form-input" value="Индивидуальный тур на 8 дней" />
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label">Главный заголовок (Hero Title)</label>
+                <input type="text" data-cms-input="hero_title" class="admin-form-input" value="« ГРАНД ТУР ПО УЗБЕКИСТАНУ »" />
+              </div>
+            </div>
+
+            <!-- Contacts Info -->
+            <div style="background: rgba(11, 17, 32, 0.5); padding: 18px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.08);">
+              <h4 style="color: var(--admin-gold); margin-top: 0; margin-bottom: 14px;">📞 Контакты и Соцсети</h4>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                <div class="admin-form-group">
+                  <label class="admin-form-label">Телефон / WhatsApp</label>
+                  <input type="text" data-cms-input="contact_phone" class="admin-form-input" value="+998 97 423 00 11" />
+                </div>
+                <div class="admin-form-group">
+                  <label class="admin-form-label">Email</label>
+                  <input type="email" data-cms-input="contact_email" class="admin-form-input" value="Sktravels.uz@gmail.com" />
+                </div>
+                <div class="admin-form-group">
+                  <label class="admin-form-label">Telegram username</label>
+                  <input type="text" data-cms-input="contact_telegram" class="admin-form-input" value="@Sokrat_100kratt" />
+                </div>
+                <div class="admin-form-group">
+                  <label class="admin-form-label">Instagram account</label>
+                  <input type="text" data-cms-input="contact_instagram" class="admin-form-input" value="@sktravels.uz" />
+                </div>
+              </div>
+
+              <!-- Email Dispatch Test Box -->
+              <div style="margin-top: 16px; padding: 14px; background: rgba(212, 175, 55, 0.08); border: 1px dashed rgba(212, 175, 55, 0.3); border-radius: 8px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+                  <div>
+                    <strong style="color: #D4AF37; font-size: 0.9rem;">📬 Уведомления о заявках клиентов на Email</strong>
+                    <p style="margin: 4px 0 0 0; color: var(--admin-muted); font-size: 0.82rem;">Все заявки с сайта приходят на указанный выше Email (<strong>Sktravels.uz@gmail.com</strong>).</p>
+                  </div>
+                  <button type="button" id="admin-test-email-btn" class="btn-admin-gold" style="padding: 8px 16px; font-size: 0.85rem;">
+                    🧪 Отправить тестовое письмо
+                  </button>
+                </div>
+                <div id="admin-test-email-result" style="margin-top: 10px; font-size: 0.83rem; display: none;"></div>
+              </div>
+            </div>
+
+            <!-- Section Headers -->
+            <div style="background: rgba(11, 17, 32, 0.5); padding: 18px; border-radius: 12px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.08);">
+              <h4 style="color: var(--admin-gold); margin-top: 0; margin-bottom: 14px;">🏷️ Заголовки разделов</h4>
+              
+              <div class="admin-form-group">
+                <label class="admin-form-label">Раздел "Что вас ждёт?" (Интерактивная карта)</label>
+                <input type="text" data-cms-input="map_title" class="admin-form-input" value="ЧТО ВАС ЖДЁТ?" />
+              </div>
+
+              <div class="admin-form-group">
+                <label class="admin-form-label">Раздел Отели (Заголовок)</label>
+                <input type="text" data-cms-input="hotels_title" class="admin-form-input" value="ОТЕЛИ ПО ПРОГРАММЕ ИЛИ АНАЛОГИЧНЫЕ ЭТИМ ОТЕЛЯМ" />
+              </div>
+
+              <div class="admin-form-group">
+                <label class="admin-form-label">Раздел Доп. Экскурсии (Заголовок)</label>
+                <input type="text" data-cms-input="tickets_title" class="admin-form-input" value="ДОПОЛНИТЕЛЬНЫЕ ЭКСКУРСИИ И МАРШРУТЫ" />
+              </div>
+
+              <div class="admin-form-group">
+                <label class="admin-form-label">Раздел Отзывы (Заголовок)</label>
+                <input type="text" data-cms-input="guests_title" class="admin-form-input" value="НАШИ ДОРОГИЕ ГОСТИ" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn-admin-gold" style="width: 100%;">Сохранить тексты</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- ===================================================
+           TAB 3: PHOTOS & MEDIA MANAGEMENT
+           =================================================== -->
+      <div id="tab-images" class="tab-panel-content">
+        <div class="admin-panel-card">
+          <h3 class="admin-card-title">🖼️ Управление фотографиями сайта</h3>
+          
+          <form id="cms-images-form">
+            <!-- Polaroid 1: Samarkand -->
+            <div class="media-box-section">
+              <div class="media-box-title">
+                <span>📸 Полароид 1 (Главный экран — Самарканд)</span>
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label">Выберите файл с компьютера (PNG, JPG, WebP)</label>
+                <input type="file" class="admin-form-input cms-image-file" data-key="polaroid_samarkand" accept="image/*" />
+              </div>
+              <div class="admin-form-group" style="margin-bottom: 0;">
+                <label class="admin-form-label">Или укажите прямую ссылку на фото (URL)</label>
+                <input type="url" class="admin-form-input cms-image-url" data-key="polaroid_samarkand" placeholder="assets/images/polaroid_samarkand.webp" />
+              </div>
+              <div class="image-preview-box" style="margin-top: 10px;">
+                <img id="preview-polaroid_samarkand" src="assets/images/polaroid_samarkand.webp" alt="Polaroid Samarkand" />
+              </div>
+            </div>
+
+            <!-- Polaroid 2: Bukhara -->
+            <div class="media-box-section">
+              <div class="media-box-title">
+                <span>📸 Полароид 2 (Главный экран — Бухара)</span>
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label">Выберите файл с компьютера (PNG, JPG, WebP)</label>
+                <input type="file" class="admin-form-input cms-image-file" data-key="polaroid_bukhara" accept="image/*" />
+              </div>
+              <div class="admin-form-group" style="margin-bottom: 0;">
+                <label class="admin-form-label">Или укажите прямую ссылку на фото (URL)</label>
+                <input type="url" class="admin-form-input cms-image-url" data-key="polaroid_bukhara" placeholder="assets/images/polaroid_bukhara.webp" />
+              </div>
+              <div class="image-preview-box" style="margin-top: 10px;">
+                <img id="preview-polaroid_bukhara" src="assets/images/polaroid_bukhara.webp" alt="Polaroid Bukhara" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn-admin-gold" style="width: 100%;">Применить фотографии</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- ===================================================
+           TAB 4: BLOCKS VISIBILITY MANAGEMENT
+           =================================================== -->
+      <div id="tab-blocks" class="tab-panel-content">
+        <div class="admin-panel-card">
+          <h3 class="admin-card-title">🧱 Управление отображением блоков сайта</h3>
+          <p style="color: var(--admin-muted); font-size: 0.88rem; margin-top: -10px; margin-bottom: 20px;">
+            Включайте или отключайте секции на главной странице в 1 клик
+          </p>
+
+          <form id="cms-blocks-form">
+            <!-- Hero section -->
+            <div class="block-toggle-row">
+              <div class="block-toggle-info">
+                <span class="block-toggle-title">🚩 Главный баннер (Hero)</span>
+                <span class="block-toggle-sub">Приветственный экран с заголовком и полароидами</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" data-block-key="hero" checked>
+                <span class="slider-toggle"></span>
+              </label>
+            </div>
+
+            <!-- Interactive Map section -->
+            <div class="block-toggle-row">
+              <div class="block-toggle-info">
+                <span class="block-toggle-title">🗺️ Интерактивная карта ("Что вас ждёт?")</span>
+                <span class="block-toggle-sub">Карта регионов Узбекистана с точками и подсказками</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" data-block-key="map" checked>
+                <span class="slider-toggle"></span>
+              </label>
+            </div>
+
+            <!-- Included section -->
+            <div class="block-toggle-row">
+              <div class="block-toggle-info">
+                <span class="block-toggle-title">💎 Что входит в стоимость</span>
+                <span class="block-toggle-sub">Карточки услуг (трансфер, отели, гид, дегустации)</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" data-block-key="included" checked>
+                <span class="slider-toggle"></span>
+              </label>
+            </div>
+
+            <!-- Hotels section -->
+            <div class="block-toggle-row">
+              <div class="block-toggle-info">
+                <span class="block-toggle-title">🏨 Отели по программе</span>
+                <span class="block-toggle-sub">Слайдер бутик-отелей (Ташкент, Самарканд, Бухара, Хива, Юрты)</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" data-block-key="hotels" checked>
+                <span class="slider-toggle"></span>
+              </label>
+            </div>
+
+            <!-- Guests / Reviews section -->
+            <div class="block-toggle-row">
+              <div class="block-toggle-info">
+                <span class="block-toggle-title">💬 Отзывы гостей</span>
+                <span class="block-toggle-sub">Слайдер отзывов с фото и видео туристов</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" data-block-key="guests" checked>
+                <span class="slider-toggle"></span>
+              </label>
+            </div>
+
+            <!-- Additional Tickets section -->
+            <div class="block-toggle-row">
+              <div class="block-toggle-info">
+                <span class="block-toggle-title">🎟️ Дополнительные маршруты</span>
+                <span class="block-toggle-sub">Билеты (Арал, Хайкинг, Нефритовые озёра, Охота, Малайзия)</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" data-block-key="tickets" checked>
+                <span class="slider-toggle"></span>
+              </label>
+            </div>
+
+            <!-- Contacts / Footer section -->
+            <div class="block-toggle-row">
+              <div class="block-toggle-info">
+                <span class="block-toggle-title">📞 Подвал и Контакты</span>
+                <span class="block-toggle-sub">Прямые телефоны, Telegram, WhatsApp и визитка</span>
+              </div>
+              <label class="switch">
+                <input type="checkbox" data-block-key="contacts" checked>
+                <span class="slider-toggle"></span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn-admin-gold" style="width: 100%; margin-top: 10px;">💾 Сохранить видимость блоков</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- ===================================================
+           TAB 5: CLOUD API & BACKUP MANAGEMENT
+           =================================================== -->
+      <div id="tab-cloud" class="tab-panel-content">
+        
+        <!-- Cloud Sync Card -->
+        <div class="admin-panel-card" style="border: 1.5px solid rgba(212, 175, 55, 0.4); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);">
+          <h3 class="admin-card-title" style="margin-bottom: 14px;">
+            <span style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.4rem;">🔑</span> 
+              <span>Подключение Облака (JSONBin.io API)</span>
+            </span>
+            <span id="cloud-status-badge" class="cloud-status-badge status-offline">🔴 Локальный режим</span>
+          </h3>
+
+          <p style="color: var(--admin-muted); font-size: 0.88rem; line-height: 1.5; margin-top: 0; margin-bottom: 18px;">
+            Подключите бесплатный API ключ JSONBin, чтобы изменения текстов, картинок и отзывов автоматически сохранялись в облаке и были видны всем посетителям вашего сайта!
+          </p>
+
+          <form id="cloud-config-form">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 16px;">
+              <div class="admin-form-group" style="margin-bottom: 0;">
+                <label class="admin-form-label">Облачный сервис / Провайдер</label>
+                <select id="cloud-provider-select" class="admin-form-select">
+                  <option value="jsonbin">📦 JSONBin.io (Бесплатно, рекомендуется)</option>
+                  <option value="custom">🌐 Произвольный REST API / Webhook</option>
+                </select>
+              </div>
+
+              <div class="admin-form-group" style="margin-bottom: 0;">
+                <label class="admin-form-label" id="cloud-key-label">API Ключ (Master Key) *</label>
+                <div style="position: relative;">
+                  <input type="password" id="cloud-apikey-input" class="admin-form-input" placeholder="Вставьте API ключ ($2a$10$...)" style="padding-right: 42px;" />
+                  <button type="button" id="toggle-key-visibility-btn" style="position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #9CA3AF; cursor: pointer; font-size: 1.1rem;" title="Показать/скрыть ключ">👁️</button>
+                </div>
+              </div>
+
+              <div class="admin-form-group" style="margin-bottom: 0;">
+                <label class="admin-form-label" id="cloud-url-label">ID Базы (Bin ID)</label>
+                <input type="text" id="cloud-endpoint-input" class="admin-form-input" placeholder="Автоматически сгенерируется" />
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+              <button type="submit" id="save-cloud-keys-btn" class="btn-admin-gold" style="padding: 10px 20px;">
+                💾 Сохранить и подключить API
+              </button>
+              <button type="button" id="test-cloud-conn-btn" class="btn-admin-secondary">
+                🧪 Проверить связь
+              </button>
+              <button type="button" id="export-cloud-cfg-btn" class="btn-admin-secondary">
+                ⚙️ Скачать cloud-config.json
+              </button>
+            </div>
+          </form>
+
+          <div id="cloud-test-result-msg" style="margin-top: 14px; padding: 12px; border-radius: 8px; font-size: 0.88rem; display: none;"></div>
+        </div>
+
+        <!-- Backup & Restore Actions -->
+        <div class="admin-panel-card">
+          <h3 class="admin-card-title">💾 Резервная копия и бэкап данных сайта</h3>
+          <p style="color: var(--admin-muted); font-size: 0.88rem;">
+            Вы можете сохранить весь контент сайта (тексты, отзывы, фото, блоки) в 1 файл бэкапа и при необходимости восстановить.
+          </p>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
+            <button id="admin-export-btn" class="btn-admin-gold">💾 Скачать бэкап сайта (JSON)</button>
+            <label class="btn-admin-secondary" style="cursor: pointer;">
+              📂 Загрузить бэкап из файла
+              <input type="file" id="admin-import-file" accept=".json" style="display: none;" />
+            </label>
+            <button id="admin-reset-btn" class="btn-delete-item" style="margin-left: auto;">🔄 Сбросить к заводским настройкам</button>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <script src="js/cms.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

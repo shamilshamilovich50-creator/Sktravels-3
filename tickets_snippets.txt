@@ -1,0 +1,139 @@
+=== index.html ===
+--- Found 'охота' at 56632 ---
+      <img src="assets/icons/ticket_qr.svg" alt="QR-код" class="ticket-qr-code" width="60" height="60" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Ticket 5: Hunting -->
+        <div class="ticket-card">
+          <div class="ticket-main">
+            <h3 class="ticket-title">ОХОТА В ГОРАХ</h3>
+            <p class="ticket-duration">авторский экспедиционный тур с егерем / 1-3 дня</p>
+            <div class="ticket-tags">
+              <span class="ticket-tag">дикая природа</span>
+              <span class="ticket-tag">опытные проводники</span>
+              <span class="ticke
+
+--- Found 'охота' at 57214 ---
+     <span class="ticket-tag">снаряжение</span>
+              <span class="ticket-tag">питание: завтрак и обеды</span>
+            </div>
+          </div>
+          <div class="ticket-stub">
+            <div class="ticket-stamp-photo">
+              <img src="assets/images/ticket_hunting.webp" alt="Охота в горах" width="280" height="190" loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="ticket-qr-container">
+              <img src="assets/icons/ticket_qr.svg" alt="QR-код" class="ticket-qr-code" width="60" height="60" />
+            </div>
+          </div>
+
+--- Found 'нефрит' at 55574 ---
+="assets/icons/ticket_qr.svg" alt="QR-код" class="ticket-qr-code" width="60" height="60" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Ticket 4: Jade Lakes (Urungach) -->
+        <div class="ticket-card">
+          <div class="ticket-main">
+            <h3 class="ticket-title">НЕФРИТОВЫЕ ОЗЁРА (УРУНГАЧ)</h3>
+            <p class="ticket-duration">бирюзовое чудо Угам-Чаткала / 1 день</p>
+            <div class="ticket-tags">
+              <span class="ticket-tag">кристальная вода</span>
+              <span class="ticket-tag">горное ущелье</span>
+              <span class="ticket
+
+--- Found 'нефрит' at 56157 ---
+    <span class="ticket-tag">фотолокации</span>
+              <span class="ticket-tag">питание: завтрак и обед</span>
+            </div>
+          </div>
+          <div class="ticket-stub">
+            <div class="ticket-stamp-photo">
+              <img src="assets/images/ticket_urungach.webp" alt="Нефритовые озёра Урунгач" width="280" height="190"
+                loading="lazy" decoding="async" />
+            </div>
+            <div class="ticket-qr-container">
+              <img src="assets/icons/ticket_qr.svg" alt="QR-код" class="ticket-qr-code" width="60" height="60" />
+            </div>
+      
+
+=== 5days.html ===
+--- Found 'охота' at 1120733 ---
+="247" data-field-top-value="309" data-field-topunits-value="px" data-field-width-res-640-value="214" data-field-width-res-960-value="323" data-field-width-value="357" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443829816000003">ОХОТА</div> </div> <div class="t396__elem tn-elem tn-elem__24617951011783443653419" data-elem-id="1783443653419" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-value="grid" data-field-height-res-640-value="249" data-field-height-res-960-value="315" 
+
+--- Found 'охота' at 1124779 ---
+lue="px" data-field-width-res-640-value="208" data-field-width-res-960-value="243" data-field-width-value="280" data-field-widthunits-res-640-value="px" data-field-widthunits-res-960-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443859541">Сезонная и трофейная охота</div> </div> <div class="t396__group tn-group tn-group__24617951011783865560537000001" data-fields="top,left,container" data-group-height-res-320-value="36" data-group-height-res-640-value="36" data-group-height-res-960-value="39" data-group-height-value="39" data-group-id="1783865560537000001" dat
+
+--- Found 'охота' at 1311669 ---
+="247" data-field-top-value="309" data-field-topunits-value="px" data-field-width-res-640-value="214" data-field-width-res-960-value="323" data-field-width-value="357" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443829816000003">ОХОТА</div> </div> <div class="t396__elem tn-elem tn-elem__24659787711783443653419" data-elem-id="1783443653419" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-value="grid" data-field-height-res-320-value="230" data-field-height-res-640-value="249" 
+
+--- Found 'охота' at 1315797 ---
+lue="px" data-field-width-res-640-value="208" data-field-width-res-960-value="243" data-field-width-value="280" data-field-widthunits-res-640-value="px" data-field-widthunits-res-960-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443859541">Сезонная и трофейная охота</div> </div> <div class="t396__group tn-group tn-group__24659787711783865560537000001" data-fields="top,left,container" data-group-height-res-320-value="36" data-group-height-res-640-value="36" data-group-height-res-960-value="39" data-group-height-value="39" data-group-id="1783865560537000001" dat
+
+--- Found 'нефрит' at 1166435 ---
+dth-res-320-value="250" data-field-width-res-640-value="250" data-field-width-res-960-value="323" data-field-width-value="400" data-field-widthunits-res-320-value="px" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783937391509000251">НЕФРИТОВЫЕ ОЗЕРА</div> </div> <div class="t396__elem tn-elem tn-elem__24617951011783937391509000252" data-elem-id="1783937391509000252" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-res-320-value="grid" data-field-container-value="grid" data-field-h
+
+--- Found 'нефрит' at 1358771 ---
+dth-res-320-value="250" data-field-width-res-640-value="250" data-field-width-res-960-value="323" data-field-width-value="400" data-field-widthunits-res-320-value="px" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783937391509000251">НЕФРИТОВЫЕ ОЗЕРА</div> </div> <div class="t396__elem tn-elem tn-elem__24659787711783937391509000252" data-elem-id="1783937391509000252" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-res-320-value="grid" data-field-container-value="grid" data-field-h
+
+=== 6days.html ===
+--- Found 'охота' at 1265800 ---
+="247" data-field-top-value="309" data-field-topunits-value="px" data-field-width-res-640-value="214" data-field-width-res-960-value="323" data-field-width-value="357" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443829816000003">ОХОТА</div> </div> <div class="t396__elem tn-elem tn-elem__24617951011783443653419" data-elem-id="1783443653419" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-value="grid" data-field-height-res-640-value="249" data-field-height-res-960-value="315" 
+
+--- Found 'охота' at 1269846 ---
+lue="px" data-field-width-res-640-value="208" data-field-width-res-960-value="243" data-field-width-value="280" data-field-widthunits-res-640-value="px" data-field-widthunits-res-960-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443859541">Сезонная и трофейная охота</div> </div> <div class="t396__group tn-group tn-group__24617951011783865560537000001" data-fields="top,left,container" data-group-height-res-320-value="36" data-group-height-res-640-value="36" data-group-height-res-960-value="39" data-group-height-value="39" data-group-id="1783865560537000001" dat
+
+--- Found 'охота' at 1456736 ---
+="247" data-field-top-value="309" data-field-topunits-value="px" data-field-width-res-640-value="214" data-field-width-res-960-value="323" data-field-width-value="357" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443829816000003">ОХОТА</div> </div> <div class="t396__elem tn-elem tn-elem__24659787711783443653419" data-elem-id="1783443653419" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-value="grid" data-field-height-res-320-value="230" data-field-height-res-640-value="249" 
+
+--- Found 'охота' at 1460864 ---
+lue="px" data-field-width-res-640-value="208" data-field-width-res-960-value="243" data-field-width-value="280" data-field-widthunits-res-640-value="px" data-field-widthunits-res-960-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443859541">Сезонная и трофейная охота</div> </div> <div class="t396__group tn-group tn-group__24659787711783865560537000001" data-fields="top,left,container" data-group-height-res-320-value="36" data-group-height-res-640-value="36" data-group-height-res-960-value="39" data-group-height-value="39" data-group-id="1783865560537000001" dat
+
+--- Found 'нефрит' at 1311502 ---
+dth-res-320-value="250" data-field-width-res-640-value="250" data-field-width-res-960-value="323" data-field-width-value="400" data-field-widthunits-res-320-value="px" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783937391509000251">НЕФРИТОВЫЕ ОЗЕРА</div> </div> <div class="t396__elem tn-elem tn-elem__24617951011783937391509000252" data-elem-id="1783937391509000252" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-res-320-value="grid" data-field-container-value="grid" data-field-h
+
+--- Found 'нефрит' at 1503838 ---
+dth-res-320-value="250" data-field-width-res-640-value="250" data-field-width-res-960-value="323" data-field-width-value="400" data-field-widthunits-res-320-value="px" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783937391509000251">НЕФРИТОВЫЕ ОЗЕРА</div> </div> <div class="t396__elem tn-elem tn-elem__24659787711783937391509000252" data-elem-id="1783937391509000252" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-res-320-value="grid" data-field-container-value="grid" data-field-h
+
+=== 7days.html ===
+--- Found 'охота' at 1305688 ---
+="247" data-field-top-value="309" data-field-topunits-value="px" data-field-width-res-640-value="214" data-field-width-res-960-value="323" data-field-width-value="357" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443829816000003">ОХОТА</div> </div> <div class="t396__elem tn-elem tn-elem__24617951011783443653419" data-elem-id="1783443653419" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-value="grid" data-field-height-res-640-value="249" data-field-height-res-960-value="315" 
+
+--- Found 'охота' at 1309734 ---
+lue="px" data-field-width-res-640-value="208" data-field-width-res-960-value="243" data-field-width-value="280" data-field-widthunits-res-640-value="px" data-field-widthunits-res-960-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443859541">Сезонная и трофейная охота</div> </div> <div class="t396__group tn-group tn-group__24617951011783865560537000001" data-fields="top,left,container" data-group-height-res-320-value="36" data-group-height-res-640-value="36" data-group-height-res-960-value="39" data-group-height-value="39" data-group-id="1783865560537000001" dat
+
+--- Found 'охота' at 1496624 ---
+="247" data-field-top-value="309" data-field-topunits-value="px" data-field-width-res-640-value="214" data-field-width-res-960-value="323" data-field-width-value="357" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443829816000003">ОХОТА</div> </div> <div class="t396__elem tn-elem tn-elem__24659787711783443653419" data-elem-id="1783443653419" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-value="grid" data-field-height-res-320-value="230" data-field-height-res-640-value="249" 
+
+--- Found 'охота' at 1500752 ---
+lue="px" data-field-width-res-640-value="208" data-field-width-res-960-value="243" data-field-width-value="280" data-field-widthunits-res-640-value="px" data-field-widthunits-res-960-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443859541">Сезонная и трофейная охота</div> </div> <div class="t396__group tn-group tn-group__24659787711783865560537000001" data-fields="top,left,container" data-group-height-res-320-value="36" data-group-height-res-640-value="36" data-group-height-res-960-value="39" data-group-height-value="39" data-group-id="1783865560537000001" dat
+
+--- Found 'нефрит' at 1351390 ---
+dth-res-320-value="250" data-field-width-res-640-value="250" data-field-width-res-960-value="323" data-field-width-value="400" data-field-widthunits-res-320-value="px" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783937391509000251">НЕФРИТОВЫЕ ОЗЕРА</div> </div> <div class="t396__elem tn-elem tn-elem__24617951011783937391509000252" data-elem-id="1783937391509000252" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-res-320-value="grid" data-field-container-value="grid" data-field-h
+
+--- Found 'нефрит' at 1543726 ---
+dth-res-320-value="250" data-field-width-res-640-value="250" data-field-width-res-960-value="323" data-field-width-value="400" data-field-widthunits-res-320-value="px" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783937391509000251">НЕФРИТОВЫЕ ОЗЕРА</div> </div> <div class="t396__elem tn-elem tn-elem__24659787711783937391509000252" data-elem-id="1783937391509000252" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-res-320-value="grid" data-field-container-value="grid" data-field-h
+
+=== 8days.html ===
+--- Found 'охота' at 1448170 ---
+="247" data-field-top-value="309" data-field-topunits-value="px" data-field-width-res-640-value="214" data-field-width-res-960-value="323" data-field-width-value="357" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443829816000003">ОХОТА</div> </div> <div class="t396__elem tn-elem tn-elem__24617951011783443653419" data-elem-id="1783443653419" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-value="grid" data-field-height-res-640-value="249" data-field-height-res-960-value="315" 
+
+--- Found 'охота' at 1452216 ---
+lue="px" data-field-width-res-640-value="208" data-field-width-res-960-value="243" data-field-width-value="280" data-field-widthunits-res-640-value="px" data-field-widthunits-res-960-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443859541">Сезонная и трофейная охота</div> </div> <div class="t396__group tn-group tn-group__24617951011783865560537000001" data-fields="top,left,container" data-group-height-res-320-value="36" data-group-height-res-640-value="36" data-group-height-res-960-value="39" data-group-height-value="39" data-group-id="1783865560537000001" dat
+
+--- Found 'охота' at 1639048 ---
+="247" data-field-top-value="309" data-field-topunits-value="px" data-field-width-res-640-value="214" data-field-width-res-960-value="323" data-field-width-value="357" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443829816000003">ОХОТА</div> </div> <div class="t396__elem tn-elem tn-elem__24659787711783443653419" data-elem-id="1783443653419" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-value="grid" data-field-height-res-320-value="230" data-field-height-res-640-value="249" 
+
+--- Found 'охота' at 1643176 ---
+lue="px" data-field-width-res-640-value="208" data-field-width-res-960-value="243" data-field-width-value="280" data-field-widthunits-res-640-value="px" data-field-widthunits-res-960-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783443859541">Сезонная и трофейная охота</div> </div> <div class="t396__group tn-group tn-group__24659787711783865560537000001" data-fields="top,left,container" data-group-height-res-320-value="36" data-group-height-res-640-value="36" data-group-height-res-960-value="39" data-group-height-value="39" data-group-id="1783865560537000001" dat
+
+--- Found 'нефрит' at 1493872 ---
+dth-res-320-value="250" data-field-width-res-640-value="250" data-field-width-res-960-value="323" data-field-width-value="400" data-field-widthunits-res-320-value="px" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783937391509000251">НЕФРИТОВЫЕ ОЗЕРА</div> </div> <div class="t396__elem tn-elem tn-elem__24617951011783937391509000252" data-elem-id="1783937391509000252" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-res-320-value="grid" data-field-container-value="grid" data-field-h
+
+--- Found 'нефрит' at 1686150 ---
+dth-res-320-value="250" data-field-width-res-640-value="250" data-field-width-res-960-value="323" data-field-width-value="400" data-field-widthunits-res-320-value="px" data-field-widthunits-res-640-value="px" data-field-widthunits-value="px"> <div class="tn-atom" field="tn_text_1783937391509000251">НЕФРИТОВЫЕ ОЗЕРА</div> </div> <div class="t396__elem tn-elem tn-elem__24659787711783937391509000252" data-elem-id="1783937391509000252" data-elem-type="shape" data-field-axisx-value="left" data-field-axisy-value="top" data-field-container-res-320-value="grid" data-field-container-value="grid" data-field-h
+

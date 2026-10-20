@@ -1,0 +1,78 @@
+=== rec2461795101 has 38 elements ===
+  [1783443345716] (shape) w=835, h=440, left=40, top=0 | img=https://static.tildacdn.com/tild6639-6132-4632-b533-343762303133/_.svg | text=
+  [1783933847930] (gallery) w=245, h=334, left=467, top=52 | img= | text=
+  [1783443523536000001] (shape) w=835, h=440, left=40, top=0 | img= | text=ОХОТА
+  [1783443653419] (shape) w=2, h=380, left=759, top=33 | img=https://static.tildacdn.com/tild3530-3038-4134-b233-363466616635/photo.svg | text=
+  [1783443859541] (text) w=280, h=18, left=97, top=34 | img= | text=Сезонная и трофейная охота
+  [1783865519757] (shape) w=134, h=39, left=75, top=366 | img= | text=
+  [1783865504765] (text) w=106, h=18, left=87, top=377 | img= | text=дичь и трофеи
+  [1783865566823000003] (shape) w=85, h=39, left=219, top=366 | img= | text=
+  [1783865566823000004] (text) w=61, h=18, left=231, top=377 | img= | text=егеря
+  [1783865606517000006] (shape) w=61, h=39, left=314, top=366 | img= | text=
+  [1783865606517000007] (text) w=37, h=18, left=326, top=377 | img= | text=лицензии
+  [1783865287710] (image) w=24, h=24, left=67, top=31 | img=https://static.tildacdn.com/tild6563-6261-4134-b064-303564646432/weui_location-filled.svg | text=
+  [1783936212918000122] (shape) w=835, h=440, left=895, top=0 | img=https://static.tildacdn.com/tild6639-6132-4632-b533-343762303133/_.svg | text=
+  [1783936212918000124] (gallery) w=245, h=334, left=1322, top=52 | img= | text=
+  [1783936212919000125] (shape) w=835, h=440, left=895, top=0 | img= | text=Аральское море
+  [1783936212919000127] (shape) w=2, h=380, left=1614, top=33 | img=https://static.tildacdn.com/tild3530-3038-4134-b233-363466616635/photo.svg | text=
+  [1783936212919000129] (text) w=280, h=18, left=952, top=34 | img= | text=из Хивы или Нукуса на 2 дня / 1 ночь
+  [1783936212919000131] (shape) w=159, h=39, left=930, top=366 | img= | text=
+  [1783936212919000132] (text) w=136, h=18, left=942, top=377 | img= | text=кладбище кораблей
+  [1783936212919000137] (shape) w=113, h=39, left=1099, top=366 | img= | text=
+  [1783936212919000138] (text) w=90, h=18, left=1111, top=377 | img= | text=плато устюрт
+  [1783936212919000139] (image) w=24, h=24, left=922, top=31 | img=https://static.tildacdn.com/tild6563-6261-4134-b064-303564646432/weui_location-filled.svg | text=
+  [1783937391509000247] (shape) w=835, h=440, left=1750, top=0 | img=https://static.tildacdn.com/tild6639-6132-4632-b533-343762303133/_.svg | text=
+  [1783937391509000249] (gallery) w=245, h=334, left=2177, top=52 | img= | text=
+  [1783937391509000250] (shape) w=835, h=440, left=1750, top=0 | img= | text=НЕФРИТОВЫЕ ОЗЕРА
+  [1783937391509000252] (shape) w=2, h=380, left=2469, top=33 | img=https://static.tildacdn.com/tild3530-3038-4134-b233-363466616635/photo.svg | text=
+  [1783937391509000254] (text) w=280, h=18, left=1807, top=34 | img= | text=из Ташкента на 1 день
+  [1783937391509000256] (shape) w=253, h=39, left=1785, top=366 | img= | text=
+  [1783937391509000257] (text) w=227, h=18, left=1797, top=377 | img= | text=озера Урунгач
+  [1783937391509000261] (image) w=24, h=24, left=1777, top=31 | img=https://static.tildacdn.com/tild6563-6261-4134-b064-303564646432/weui_location-filled.svg | text=
+  [1783937721526000410] (shape) w=835, h=440, left=2605, top=0 | img=https://static.tildacdn.com/tild6639-6132-4632-b533-343762303133/_.svg | text=
+  [1783937721526000412] (gallery) w=245, h=334, left=3032, top=52 | img= | text=
+  [1783937721526000413] (shape) w=835, h=440, left=2605, top=0 | img= | text=Чимганские горы
+  [1783937721526000415] (shape) w=2, h=380, left=3324, top=33 | img=https://static.tildacdn.com/tild3530-3038-4134-b233-363466616635/photo.svg | text=
+  [1783937721526000417] (text) w=280, h=18, left=2662, top=34 | img= | text=из Ташкента на 1 день
+  [1783937721526000419] (shape) w=218, h=39, left=2640, top=366 | img= | text=
+  [1783937721526000420] (text) w=192, h=18, left=2652, top=377 | img= | text=Чарвакское водохранилище
+  [1783937721526000421] (image) w=24, h=24, left=2632, top=31 | img=https://static.tildacdn.com/tild6563-6261-4134-b064-303564646432/weui_location-filled.svg | text=
+=== rec2465978771 has 38 elements ===
+  [1783599233062000001] (shape) w=970, h=440, left=5000, top=5000 | img=https://static.tildacdn.com/tild3038-3564-4130-b763-313235316633/_.svg | text=
+  [1783599492596000002] (shape) w=970, h=440, left=5010, top=5010 | img= | text=
+  [1783443829816000003] (text) w=357, h=42, left=75, top=309 | img= | text=ОХОТА
+  [1783443653419] (shape) w=2, h=380, left=759, top=33 | img=https://static.tildacdn.com/tild3530-3038-4134-b233-363466616635/photo.svg | text=
+  [1783443859541] (text) w=280, h=18, left=97, top=34 | img= | text=Сезонная и трофейная охота
+  [1783865519757] (shape) w=134, h=39, left=75, top=366 | img= | text=
+  [1783865504765] (text) w=106, h=18, left=87, top=377 | img= | text=дичь и трофеи
+  [1783865566823000003] (shape) w=85, h=39, left=219, top=366 | img= | text=
+  [1783865566823000004] (text) w=61, h=18, left=231, top=377 | img= | text=егеря
+  [1783865606517000006] (shape) w=61, h=39, left=314, top=366 | img= | text=
+  [1783865606517000007] (text) w=37, h=18, left=326, top=377 | img= | text=лицензии
+  [1783865287710] (image) w=24, h=24, left=67, top=31 | img=https://static.tildacdn.com/tild6563-6261-4134-b064-303564646432/weui_location-filled.svg | text=
+  [1783937128434000192] (shape) w=970, h=440, left=5010, top=5010 | img=https://static.tildacdn.com/tild3038-3564-4130-b763-313235316633/_.svg | text=
+  [1783937128434000194] (shape) w=970, h=440, left=5020, top=5020 | img= | text=
+  [1783936212919000126] (text) w=357, h=42, left=930, top=309 | img= | text=Аральское море
+  [1783936212919000127] (shape) w=2, h=380, left=1614, top=33 | img=https://static.tildacdn.com/tild3530-3038-4134-b233-363466616635/photo.svg | text=
+  [1783936212919000129] (text) w=280, h=18, left=952, top=34 | img= | text=из Хивы или Нукуса на 2 дня / 1 ночь
+  [1783936212919000131] (shape) w=159, h=39, left=930, top=366 | img= | text=
+  [1783936212919000132] (text) w=136, h=18, left=942, top=377 | img= | text=кладбище кораблей
+  [1783936212919000137] (shape) w=113, h=39, left=1099, top=366 | img= | text=
+  [1783936212919000138] (text) w=90, h=18, left=1111, top=377 | img= | text=плато устюрт
+  [1783936212919000139] (image) w=24, h=24, left=922, top=31 | img=https://static.tildacdn.com/tild6563-6261-4134-b064-303564646432/weui_location-filled.svg | text=
+  [1783937533757000295] (shape) w=970, h=440, left=5020, top=5020 | img=https://static.tildacdn.com/tild3038-3564-4130-b763-313235316633/_.svg | text=
+  [1783937533757000297] (shape) w=970, h=440, left=5030, top=5030 | img= | text=
+  [1783937391509000251] (text) w=400, h=40, left=1785, top=309 | img= | text=НЕФРИТОВЫЕ ОЗЕРА
+  [1783937391509000252] (shape) w=2, h=380, left=2469, top=33 | img=https://static.tildacdn.com/tild3530-3038-4134-b233-363466616635/photo.svg | text=
+  [1783937391509000254] (text) w=280, h=18, left=1807, top=34 | img= | text=из Ташкента на 1 день
+  [1783937391509000256] (shape) w=253, h=39, left=1785, top=366 | img= | text=
+  [1783937391509000257] (text) w=227, h=18, left=1797, top=377 | img= | text=озера Урунгач
+  [1783937391509000261] (image) w=24, h=24, left=1777, top=31 | img=https://static.tildacdn.com/tild6563-6261-4134-b064-303564646432/weui_location-filled.svg | text=
+  [1783937949924000467] (shape) w=970, h=440, left=5030, top=5030 | img=https://static.tildacdn.com/tild3038-3564-4130-b763-313235316633/_.svg | text=
+  [1783937949924000469] (shape) w=970, h=440, left=5040, top=5040 | img= | text=
+  [1783937721526000414] (text) w=400, h=40, left=2640, top=309 | img= | text=Чимганские горы
+  [1783937721526000415] (shape) w=2, h=380, left=3324, top=33 | img=https://static.tildacdn.com/tild3530-3038-4134-b233-363466616635/photo.svg | text=
+  [1783937721526000417] (text) w=280, h=18, left=2662, top=34 | img= | text=из Ташкента на 1 день
+  [1783937721526000419] (shape) w=218, h=39, left=2640, top=366 | img= | text=
+  [1783937721526000420] (text) w=192, h=18, left=2652, top=377 | img= | text=Чарвакское водохранилище
+  [1783937721526000421] (image) w=24, h=24, left=2632, top=31 | img=https://static.tildacdn.com/tild6563-6261-4134-b064-303564646432/weui_location-filled.svg | text=
